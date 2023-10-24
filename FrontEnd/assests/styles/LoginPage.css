@@ -14,7 +14,7 @@ input {
 .container {
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: #01040e;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -62,7 +62,7 @@ form.sign-in-form {
 
 .title {
     font-size: 2.2rem;
-    color: #444;
+    color: #1743e3;
     margin-bottom: 10px;
 }
 
@@ -82,7 +82,7 @@ form.sign-in-form {
 .input-field i {
     text-align: center;
     line-height: 55px;
-    color: #acacac;
+    color: #20c997;
     transition: 0.5s;
     font-size: 1.1rem;
 }
@@ -105,6 +105,7 @@ form.sign-in-form {
 .social-text {
     padding: 0.7rem 0;
     font-size: 1rem;
+    color: #20c997;
 }
 
 .social-media {
@@ -128,13 +129,14 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-    color: #4481eb;
-    border-color: #4481eb;
+    color: #eaeaea;
+    border-color: #1743e3;
+
 }
 
 .btn {
     width: 150px;
-    background-color: #5995fd;
+    background-color: #04befe;
     border: none;
     outline: none;
     height: 49px;
@@ -146,10 +148,11 @@ form.sign-in-form {
     cursor: pointer;
     transition: 0.5s;
 }
-
 .btn:hover {
-    background-color: #4d84e2;
+    background-color: #1743e3;
+    color: #101214;
 }
+
 .panels-container {
     position: absolute;
     height: 100%;
@@ -168,7 +171,8 @@ form.sign-in-form {
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+    /*background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);*/
+    background-image: linear-gradient(-45deg, #56ffef 0%, #0059f5 100%);
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
@@ -211,10 +215,10 @@ form.sign-in-form {
     font-size: 1.5rem;
 }
 
-.panel p {
+/*.panel p {
     font-size: 0.95rem;
     padding: 0.7rem 0;
-}
+}*/
 
 .btn.transparent {
     margin: 0;
@@ -269,6 +273,58 @@ form.sign-in-form {
 .container.sign-up-mode .right-panel {
     pointer-events: all;
 }
+
+/*===============*/
+/*File Chooser*/
+/* Style the container div */
+.custom1 {
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Style the label */
+/* Apply styles to the containing div */
+.custom1 {
+    margin-bottom: 20px; /* Add margin to the bottom of the div */
+    /* Add any other styles you want for the div here */
+}
+
+/* Style the label */
+.custom1 {
+    background-color: #FF5733; /* Background color for the container */
+    padding: 15px; /* Add some padding to the container */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+.custom2 {
+    color: #3498DB; /* Text color for the label */
+}
+
+.custom3 {
+    background-color: #E74C3C; /* Background color for the input */
+    color: #FFFFFF; /* Text color for the input */
+    border: 2px solid #E74C3C; /* Border color for the input */
+    border-radius: 5px; /* Rounded corners for the input */
+    padding: 10px; /* Add some padding to the input */
+}
+
+/* Style for the file input itself */
+.custom3[type="file"] {
+    background-color: #E74C3C; /* Background color for the file input */
+    color: #FFFFFF; /* Text color for the file input */
+    border: 2px solid #E74C3C; /* Border color for the file input */
+    border-radius: 5px; /* Rounded corners for the file input */
+    padding: 10px; /* Add some padding to the file input */
+}
+
+/* Style for the label when hovering over the input */
+.custom3[type="file"]:hover + .custom2 {
+    color: #E74C3C; /* Change label text color on hover */
+}
+
+
+
+/*===============*/
+
 
 @media (max-width: 870px) {
     .container {
