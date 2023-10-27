@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="assests/styles/AdminDashboard.css">
+
+<!--    <link rel="stylesheet" href="assests/css/bootstrap.css">-->
+
 </head>
 <body>
 <!--========Navigations=======-->
-    <div class="container">
-        <div class="navigation">
+    <div class="container">  <!--mulu page ekama open-->
+        <div class="navigation">  <!--Navigation seen open-->
             <ul>
                 <li>
                     <a href="#">
@@ -19,47 +22,49 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#DashboardF" id="DashboardForm">
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#CarF" id="CarForm">
                         <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
                         <span class="title">Cars</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#CustomerF" id="CustomerForm">
                         <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                         <span class="title">Customers</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#DriverF" id="DriverForm">
                         <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                         <span class="title">Driver</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#CarRentalF" id="CarRentalForm">
                         <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
                         <span class="title">Car Rentals</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#PaymentF" id="PaymentForm">
                         <span class="icon"><ion-icon name="cash-outline"></ion-icon></span>
                         <span class="title">Payments</span>
                     </a>
                 </li>
 
             </ul>
-        </div>
+        </div>  <!--Navigation seen over-->
 
-        <div class="main">
-            <div class="topbar">
+
+        <div class="main">  <!--Meka thamaa sudu paata kotuwa-->
+
+            <div class="topbar">  <!--Top bar seen open-->
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
@@ -74,11 +79,472 @@
                 <div class="user">
                     <img src="assets/imgs/customer01.jpg" alt="">
                 </div>
-            </div>
+            </div>  <!--Top bar seen over-->
+
+            <!--==================================================================-->
+            <!-- ======================= Cards ================== -->
+            <div id="DashboardF">  <!--Cards  seen open-->
+                <div class="cardBox" >
+                    <div class="card">
+                        <div>
+                            <div class="numbers">00</div>
+                            <div class="cardName">REGISTERED CUSTOMERS</div>
+                        </div>
+
+                        <div class="iconBx">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">00</div>
+                            <div class="cardName">TODAY BOOKINGS</div>
+                        </div>
+
+                        <div class="iconBx">
+                            <ion-icon name="bookmarks-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">00</div>
+                            <div class="cardName">AVAILABLE CARS</div>
+                        </div>
+
+                        <div class="iconBx">
+                            <ion-icon name="car-sport-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">00</div>
+                            <div class="cardName">RESERVED CARS</div>
+                        </div>
+
+                        <div class="iconBx">
+                            <ion-icon name="car-sport-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">00</div>
+                            <div class="cardName">AVAILABLE DRIVERS</div>
+                        </div>
+
+                        <div class="iconBx">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <div class="numbers">00</div>
+                            <div class="cardName">OCCUPIED DRIVERS</div>
+                        </div>
+
+                        <div class="iconBx">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--Cards  seen over-->
 
 
-        </div>
-    </div>
+
+            <!--==============Cars page===============================================================-->
+            <div class="carBox" id="CarF">  <!--Car  seen open-->
+                <h1 >Car Details</h1>
+                <div class="carDetails">
+
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtRegNo" class="form-label mb-0">Registration Id</label>
+                            <input type="text" class="form-control" id="txtRegNo" name="regNo" placeholder="CAB-4525">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtBrand" class="form-label mb-0">Brand</label>
+                            <input type="text" class="form-control" id="txtBrand" name="brand" placeholder="Toyota">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <label for="cmbtype" class="form-label mb-0">Type</label>
+                        <select class="form-select" aria-label="Default select example" id="cmbtype" name="type">
+                            <option selected="">- Select Car Type -</option>
+                            <option value="1">General</option>
+                            <option value="2">Premium</option>
+                            <option value="3">Luxury</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtNoOfPassengers" class="form-label mb-0">No Of Passengers</label>
+                            <input type="text" class="form-control" id="txtNoOfPassengers" name="noOfPassengers">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <label for="cmbTransmissionType" class="form-label mb-0">Transmission</label>
+                        <select class="form-select" aria-label="Default select example" id="cmbTransmissionType" name="transmission">
+                            <option selected="">- Select Transmission -</option>
+                            <option value="1">Manual</option>
+                            <option value="2">Auto</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <label for="cmbfuel" class="form-label mb-0">Fuel</label>
+                        <select class="form-select" aria-label="Default select example" id="cmbfuel" name="fuel">
+                            <option selected="">- Select Fuel Type -</option>
+                            <option value="1">Petrol</option>
+                            <option value="2">Diesel</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="cmbColor" class="form-label mb-0">Color</label>
+                            <select class="form-select" aria-label="Default select example" id="cmbColor" name="color">
+                                <option selected="">- Select Color -</option>
+                                <option value="1">Black</option>
+                                <option value="2">White</option>
+                                <option value="3">Red</option>
+                                <option value="4">Blue</option>
+                                <option value="5">Orange</option>
+                                <option value="6">Silver</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="imgFrontView" class="form-label mb-0">Car Image</label>
+                            <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtDailyRate" class="form-label mb-0">Daily Rate (Rs.)</label>
+                            <input type="text" class="form-control" id="txtDailyRate" name="dailyRate">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtFreeKmForPrice" class="form-label mb-0">Free KM For Day</label>
+                            <input type="text" class="form-control" id="txtFreeKmForPrice" name="freeKmForPrice">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtMonthlyRate" class="form-label mb-0">Monthly Rate (Rs.)</label>
+                            <input type="text" class="form-control" id="txtMonthlyRate" name="monthlyRate">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtFreeKmForMonthPrice" class="form-label mb-0">Free KM For Month</label>
+                            <input type="text" class="form-control" id="txtFreeKmForMonthPrice" name="freeKmForMonthPrice">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label for="txtPriceForExtraKm" class="form-label mb-0">Price For Extra Km
+                                (Rs.)</label>
+                            <input type="text" class="form-control" id="txtPriceForExtraKm" name="priceForExtraKm">
+                        </div>
+                    </div>
+
+                </div>
+                <!--Buttons-->
+
+                <div class="carBtn row m-3">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-success mt-3 " id="saveCar">Save</button>
+                        <button type="button" class="btn btn-danger mt-3" id="delCar" disabled="">Delete</button>
+                        <button type="button" class="btn btn-warning mt-3" id="updateCar" disabled="">Update</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="clearCar">Clear</button>
+                    </div>
+                </div>
+
+
+                <!--======Car Table=======-->
+<!--                <div class="carTable row overflow-scroll" style="height: 28vh">-->
+                <div class="carTable row overflow-scroll" >
+                    <table class="table table-hover table-bordered table-striped" id="carTbl">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Reg No</th>
+                            <th>Brand</th>
+                            <th>Type</th>
+                            <th>No Of Passengers</th>
+                            <th>Transmission</th>
+                            <th>Fuel</th>
+                            <th>Color</th>
+                            <th>Car Image</th>
+                            <th>Daily Rate</th>
+                            <th>Free Km For Day</th>
+                            <th>Monthly Rate</th>
+                            <th>Free Km For Month</th>
+                            <th>Price For Extra Km</th>
+                        </tr>
+                        </thead>
+                        <tbody id="carTable"></tbody>
+                    </table>
+
+                </div>
+
+
+<!--=======Iwara unaata passe ayin karala daanna========================-->
+                <!--<div class="tab-pane fade active show" id="v-tabs-car" role="tabpanel" aria-labelledby="v-tabs-car-tab">
+                    <div class="row ms-0 me-0 text-center"><h1 class="h1 display-5">Car Details</h1></div>
+                    <div class="row ms-0 me-0">
+                        <h3 class="h3  p-2 m-3 bg-success text-white">Car Details</h3>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtRegNo" class="form-label mb-0">Registration No</label>
+                                <input type="text" class="form-control" id="txtRegNo" name="regNo" placeholder="CAB-4525">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtBrand" class="form-label mb-0">Brand</label>
+                                <input type="text" class="form-control" id="txtBrand" name="brand" placeholder="Toyota">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <label for="cmbtype" class="form-label mb-0">Type</label>
+                            <select class="form-select" aria-label="Default select example" id="cmbtype" name="type">
+                                <option selected="">- Select Car Type -</option>
+                                <option value="1">General</option>
+                                <option value="2">Premium</option>
+                                <option value="3">Luxury</option>
+                            </select>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtNoOfPassengers" class="form-label mb-0">No Of Passengers</label>
+                                <input type="text" class="form-control" id="txtNoOfPassengers" name="noOfPassengers">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <label for="cmbTransmissionType" class="form-label mb-0">Transmission</label>
+                            <select class="form-select" aria-label="Default select example" id="cmbTransmissionType" name="transmission">
+                                <option selected="">- Select Transmission -</option>
+                                <option value="1">Manual</option>
+                                <option value="2">Auto</option>
+                            </select>
+                        </div>
+                        <div class="col-2">
+                            <label for="cmbfuel" class="form-label mb-0">Fuel</label>
+                            <select class="form-select" aria-label="Default select example" id="cmbfuel" name="fuel">
+                                <option selected="">- Select Fuel Type -</option>
+                                <option value="1">Petrol</option>
+                                <option value="2">Diesel</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row ms-0 me-0">
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="cmbColor" class="form-label mb-0">Color</label>
+                                <select class="form-select" aria-label="Default select example" id="cmbColor" name="color">
+                                    <option selected="">- Select Color -</option>
+                                    <option value="1">Black</option>
+                                    <option value="2">White</option>
+                                    <option value="3">Red</option>
+                                    <option value="4">Blue</option>
+                                    <option value="5">Orange</option>
+                                    <option value="6">Silver</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="imgFrontView" class="form-label mb-0">Front View Image</label>
+                                <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="imgBackView" class="form-label mb-0">Back View Image</label>
+                                <input type="file" class="form-control" id="imgBackView" name="imgBackView">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="imgSideView" class="form-label mb-0">Side View Image</label>
+                                <input type="file" class="form-control" id="imgSideView" name="imgSideView">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="imgInteriorView" class="form-label mb-0">Interior View Image</label>
+                                <input type="file" class="form-control" id="imgInteriorView" name="imgInteriorView">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtDailyRate" class="form-label mb-0">Daily Rate (Rs.)</label>
+                                <input type="text" class="form-control" id="txtDailyRate" name="dailyRate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ms-0 me-0">
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtMonthlyRate" class="form-label mb-0">Monthly Rate (Rs.)</label>
+                                <input type="text" class="form-control" id="txtMonthlyRate" name="monthlyRate">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtFreeKmForPrice" class="form-label mb-0">Free Mileage For The Price
+                                    (Km)</label>
+                                <input type="text" class="form-control" id="txtFreeKmForPrice" name="freeKmForPrice">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtFreeKmForDuration" class="form-label mb-0">Free Km For The Duration
+                                    (Km)</label>
+                                <input type="text" class="form-control" id="txtFreeKmForDuration" name="freeKmForDuration">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtLossDamageWaiver" class="form-label mb-0">Loss Damage Waiver
+                                    (Rs.)</label>
+                                <input type="text" class="form-control" id="txtLossDamageWaiver" name="lossDamageWaiver">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtPriceForExtraKm" class="form-label mb-0">Price For Extra Km
+                                    (Rs.)</label>
+                                <input type="text" class="form-control" id="txtPriceForExtraKm" name="priceForExtraKm">
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="mb-3">
+                                <label for="txtCompleteKm" class="form-label mb-0">Complete Kilometers (Km)</label>
+                                <input type="text" class="form-control" id="txtCompleteKm" name="completeKm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <button type="button" class="btn btn-success mt-3 " id="saveCar">Save</button>
+                            <button type="button" class="btn btn-danger mt-3" id="delCar" disabled="">Delete</button>
+                            <button type="button" class="btn btn-warning mt-3" id="updateCar" disabled="">Update</button>
+                            <button type="button" class="btn btn-secondary mt-3" id="clearCar">Clear</button>
+                        </div>
+                    </div>
+
+                    <div class="row ml-0 mr-0 mt-2 align-content-end ">
+                        <div class="input-group d-flex align-items-center justify-content-center">
+                            <div class="col-2">
+                                <input type="text" id="searchCar" class="form-control" placeholder="Search Reg No">
+                            </div>
+                            <button type="button" class="btn btn-primary" id="btnSearchCar">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row overflow-scroll" style="height: 28vh">
+                        <table class="table table-hover table-bordered table-striped" id="carTbl">
+                            <thead class="bg-info">
+                            <tr>
+                                <th>Reg No</th>
+                                <th>Brand</th>
+                                <th>Type</th>
+                                <th>No Of Passengers</th>
+                                <th>Transmission</th>
+                                <th>Fuel</th>
+                                <th>Color</th>
+                                <th>Daily Rate</th>
+                                <th>Monthly Rate</th>
+                                <th>Free Km For Price</th>
+                                <th>Free Km For Duration</th>
+                                <th>Loss Damage Waiver</th>
+                                <th>Price For Extra Km</th>
+                                <th>Complete Km</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody id="carTable"></tbody>
+                        </table>
+
+                    </div>
+                </div>--> <!--=======Iwara unaata passe ayin karala daanna========================-->
+
+
+
+
+            </div> <!--Car  seen over-->
+            <!--==============Cars Page Over===============================================================-->
+
+
+
+            <!--===============================================================================================-->
+            <!--==============Customer Page Open===============================================================-->
+            <div class="customerBox" id="CustomerF">  <!--Customer  seen open-->
+
+                <div class="customerDetails">
+                    <h1 >Hello Customer Page</h1>
+                </div>
+
+
+
+            </div> <!--Customer  seen over-->
+            <!--==============Customer Page Over===============================================================-->
+
+            <!--===============================================================================================-->
+            <!--==============Driver Page Open===============================================================-->
+            <div class="driverBox" id="DriverF">  <!--Driver  seen open-->
+
+                <div class="driverDetails">
+                    <h1 >Hello Driver Page</h1>
+                </div>
+
+
+
+            </div> <!--Driver  seen over-->
+            <!--==============Driver Page Over===============================================================-->
+
+            <!--===============================================================================================-->
+            <!--==============Car Rental Page Open===============================================================-->
+            <div class="carRentalBox" id="CarRentalF">  <!--Car Rental Rental  seen open-->
+
+                <div class="carRentalDetails">
+                    <h1 >Hello Car Rental Page</h1>
+                </div>
+
+
+
+            </div> <!--Car Rental  seen over-->
+            <!--==============Car Rental Page Over===============================================================-->
+
+            <!--===============================================================================================-->
+            <!--==============Payments Page Open===============================================================-->
+            <div class="paymentBox" id="PaymentF">  <!--Payments  seen open-->
+
+                <div class="paymentsDetails">
+                    <h1 >Hello Payments Page</h1>
+                </div>
+
+
+
+            </div> <!--Payments  seen over-->
+            <!--==============Payments Page Over===============================================================-->
+
+
+        </div> <!--mulu main eka over-->
+
+    </div> <!--mulu page ekama over-->
 
 <!-- ====== Scripts ======= -->
     <script src="assests/scripts/AdminDashboard.js"></script>
@@ -86,5 +552,71 @@
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!--<script src="assests/js/bootstrap.js"></script>-->
+<!--<script src="assests/js/jquery-3.6.0.min.js"></script>-->
+
+
+<!--<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("DashboardF").style.display = 'inline-block';
+        document.getElementById("CarF").style.display = 'none';
+        document.getElementById("CustomerF").style.display = 'none';
+        document.getElementById("DriverF").style.display = 'none';
+        document.getElementById("CarRentalF").style.display = 'none';
+        document.getElementById("PaymentF").style.display = 'none';
+    });
+
+    document.getElementById("DashboardForm").addEventListener('click', function () {
+        document.getElementById("DashboardF").style.display = 'inline-block';
+        document.getElementById("CarF").style.display = 'none';
+        document.getElementById("CustomerF").style.display = 'none';
+        document.getElementById("DriverF").style.display = 'none';
+        document.getElementById("CarRentalF").style.display = 'none';
+        document.getElementById("PaymentF").style.display = 'none';
+    });
+
+    document.getElementById("CarForm").addEventListener('click', function () {
+        document.getElementById("DashboardF").style.display = 'none';
+        document.getElementById("CarF").style.display = 'inline-block';
+        document.getElementById("CustomerF").style.display = 'none';
+        document.getElementById("DriverF").style.display = 'none';
+        document.getElementById("CarRentalF").style.display = 'none';
+        document.getElementById("PaymentF").style.display = 'none';
+    });
+    document.getElementById("CustomerForm").addEventListener('click', function () {
+        document.getElementById("DashboardF").style.display = 'none';
+        document.getElementById("CarF").style.display = 'none';
+        document.getElementById("CustomerF").style.display = 'inline-block';
+        document.getElementById("DriverF").style.display = 'none';
+        document.getElementById("CarRentalF").style.display = 'none';
+        document.getElementById("PaymentF").style.display = 'none';
+    });
+    document.getElementById("DriverForm").addEventListener('click', function () {
+        document.getElementById("DashboardF").style.display = 'none';
+        document.getElementById("CarF").style.display = 'none';
+        document.getElementById("CustomerF").style.display = 'none';
+        document.getElementById("DriverF").style.display = 'inline-block';
+        document.getElementById("CarRentalF").style.display = 'none';
+        document.getElementById("PaymentF").style.display = 'none';
+    });
+    document.getElementById("CarRentalForm").addEventListener('click', function () {
+        document.getElementById("DashboardF").style.display = 'none';
+        document.getElementById("CarF").style.display = 'none';
+        document.getElementById("CustomerF").style.display = 'none';
+        document.getElementById("DriverF").style.display = 'none';
+        document.getElementById("CarRentalF").style.display = 'inline-block';
+        document.getElementById("PaymentF").style.display = 'none';
+    });
+    document.getElementById("PaymentForm").addEventListener('click', function () {
+        document.getElementById("DashboardF").style.display = 'none';
+        document.getElementById("CarF").style.display = 'none';
+        document.getElementById("CustomerF").style.display = 'none';
+        document.getElementById("DriverF").style.display = 'none';
+        document.getElementById("CarRentalF").style.display = 'none';
+        document.getElementById("PaymentF").style.display = 'inline-block';
+    });
+
+</script>-->
 </body>
 </html>

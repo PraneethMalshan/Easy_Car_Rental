@@ -139,7 +139,8 @@ body {
     width: calc(100% - 300px);
     left: 300px;
     min-height: 100vh;
-    background: var(--white);
+    /*background: var(--white);*/
+    background: #3D6099;
     transition: 0.5s;
 }
 .main.active {
@@ -148,6 +149,7 @@ body {
 }
 
 .topbar {
+    /*position: fixed;*/
     width: 100%;
     height: 60px;
     display: flex;
@@ -205,6 +207,262 @@ body {
     cursor: pointer;
 }
 /*=========================*/
+/*===================================================================================*/
+/* ======================= Cards ====================== */
+
+/*
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.cardBox .card {
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.cardBox .card .cardName {
+    color: var(--black2);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+    font-size: 3.5rem;
+    color: var(--black2);
+}
+
+.cardBox .card:hover {
+    background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+    color: var(--white);
+}
+*/
+
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    /*background-color: sienna;*/
+}
+
+.cardBox .card {
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.cardBox .card .cardName {
+    color: var(--black2);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+    font-size: 3.5rem;
+    color: var(--black2);
+}
+
+.cardBox .card:hover {
+    background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+    color: var(--white);
+}
+
+
+
+/*===================================================================================*/
+/* ================== Order Details List ============== */
+/*.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    !* margin-top: 10px; *!
+}
+
+.details .recentOrders {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.details .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader h2 {
+    font-weight: 600;
+    color: var(--blue);
+}
+.cardHeader .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.details table thead td {
+    font-weight: 600;
+}
+.details .recentOrders table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details .recentOrders table tr:last-child {
+    border-bottom: none;
+}
+.details .recentOrders table tbody tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+.details .recentOrders table tr td {
+    padding: 10px;
+}
+.details .recentOrders table tr td:last-child {
+    text-align: end;
+}
+.details .recentOrders table tr td:nth-child(2) {
+    text-align: end;
+}
+.details .recentOrders table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.status.delivered {
+    padding: 2px 4px;
+    background: #8de02c;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.pending {
+    padding: 2px 4px;
+    background: #e9b10a;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.return {
+    padding: 2px 4px;
+    background: #f00;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.inProgress {
+    padding: 2px 4px;
+    background: #1795ce;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recentCustomers {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+.recentCustomers .imgBx {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.recentCustomers .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recentCustomers table tr td {
+    padding: 12px 10px;
+}
+.recentCustomers table tr td h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.recentCustomers table tr td h4 span {
+    font-size: 14px;
+    color: var(--black2);
+}
+
+.recentCustomers table tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+.recentCustomers table tr:hover td h4 span {
+    color: var(--white);
+}*/
+/*===================================================================================*/
+
+
 
 
 /* ====================== Responsive Design ========================== */
@@ -269,3 +527,327 @@ body {
         left: initial;
     }
 }
+
+
+/*=======================================================================================*/
+/*==============  Car Page Styls Start  =======================================================*/
+
+.carBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+
+    /*background-color: #0dcaf0;*/
+}
+ .carDetails {
+
+     width: 100%;
+     /*height: 90vh;*/
+     background-color: #adb5bd;
+     border-radius: 30px;
+     padding: 20px;
+     /*display: flex;
+     justify-content: center;
+     align-items: center;*/
+
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 30px;
+ }
+
+.carBox h1 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/*===================================*/
+
+
+
+
+.form-label {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Style for input fields and selects */
+.form-control,
+.form-select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style for submit buttons */
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for color options */
+#cmbColor {
+    background-color: #fff;
+}
+
+#cmbColor option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style for file input */
+#imgFrontView {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/*===================Car buttons==================*/
+.carBtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffca2c;*/
+    padding: 20px;
+}
+
+/* Style for the button container */
+.carBtn {
+    text-align: center;
+}
+
+/* Style for the buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Style for the Save button */
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Style for the Delete button */
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Style for the Update button */
+.btn-warning {
+    background-color: #ffc107;
+    color: #333;
+}
+
+/* Style for the Clear button */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Hover styles */
+.btn:hover {
+    background-color: #0dcaf0;
+    transform: scale(1.05);
+}
+
+
+/*==========Car Table=========================*/
+.carTable {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffca2c;*/
+    padding: 20px;
+}
+/*-----------*/
+/* Style for the table container */
+.overflow-scroll {
+    overflow: auto;
+}
+
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style for table header */
+thead {
+
+    background-color: #101214;
+    /*background-color: #17a2b8;*/
+    color: #fff;
+}
+
+/* Style for table header cells */
+th {
+    padding: 10px;
+}
+
+/* Style for table rows */
+tr {
+    /*background-color: #f5f5f5;*/
+    background-color: #ffca2c;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover style for table rows */
+tr:hover {
+    /*background-color: #D3D3D3;*/
+    background-color: #ff022c;
+    transform: scale(1.02);
+}
+
+/* Style for table data cells */
+td {
+    padding: 10px;
+}
+
+/* Style for alternating row colors */
+tr:nth-child(odd) {
+    /*background-color: #fff;*/
+    background-color: #17a2b8;
+}
+
+
+/*===================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============  Car Page Styls End    =======================================================*/
+
+
+
+/*=======================================================================================*/
+/*==============  Customer Styls Start  =======================================================*/
+
+.customerBox {
+    height: 100vh;
+    width: 100%;
+    background-color: #20c997;
+}
+.customerDetails h1 {
+    color: #20c997;
+    background-color: #ff022c;
+
+}
+/*==============  Car Page Styls End    =======================================================*/
+
+
+
+/*================================================================================================*/
+/*==============  Driver Page Styls Start  =======================================================*/
+
+.driverBox {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffca2c;
+}
+.driverDetails h1 {
+    color: #20c997;
+    background-color: #ff022c;
+
+}
+
+/*==============  Car Page Styls End    =======================================================*/
+
+
+
+
+/*================================================================================================*/
+/*==============  Car Rental Page Styls Start  =======================================================*/
+
+.carRentalBox {
+    height: 100vh;
+    width: 100%;
+    background-color: #adb5bd;
+}
+.carRentalDetails h1 {
+    color: #20c997;
+    background-color: #ff022c;
+
+}
+
+/*==============  Car Page Styls End    =======================================================*/
+
+
+
+/*================================================================================================*/
+/*==============  Payments Page Styls Start  =======================================================*/
+
+.paymentBox {
+    height: 100vh;
+    width: 100%;
+    background-color: #bacbe6;
+}
+.paymentsDetails h1 {
+    color: #20c997;
+    background-color: #ff022c;
+
+}
+
+/*==============  Car Page Styls End    =======================================================*/
