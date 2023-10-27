@@ -482,26 +482,65 @@
             <!--===============================================================================================-->
             <!--==============Car Rental Page Open===============================================================-->
             <div class="carRentalBox" id="CarRentalF">  <!--Car Rental Rental  seen open-->
+                <h1 >Car Rental</h1>
 
-                <div class="carRentalDetails">
-                    <h1 >Hello Car Rental Page</h1>
-                </div>
-
-
-
+<!--                    <div class="bg-light row overflow-scroll" style="height: 75vh">-->
+                    <div class="carRentalTable bg-light row overflow-scroll">
+                        <table class="table table-hover table-bordered table-striped" id="carRentalsTbl">
+                            <thead class="bg-info">
+                            <tr>
+                                <th>Car Rent ID</th>
+                                <th>Customer ID</th>
+                                <th>Driver ID</th>
+                                <th>Registration ID</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tblCarRentals"></tbody>
+                        </table>
+                    </div>
             </div> <!--Car Rental  seen over-->
             <!--==============Car Rental Page Over===============================================================-->
+
 
             <!--===============================================================================================-->
             <!--==============Payments Page Open===============================================================-->
             <div class="paymentBox" id="PaymentF">  <!--Payments  seen open-->
-
+                <h1 >Payments</h1>
                 <div class="paymentsDetails">
-                    <h1 >Hello Payments Page</h1>
+                    <div class="row m-3">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <div>
+                                <label for="pickFromDate" class="form-label">From</label>
+                                <input type="date" id="pickFromDate" class="form-control" name="fromDate" placeholder="Start Date">
+                            </div>
+                            <div>
+                                <label for="pickFromDate" class="form-label">To</label>
+                                <input type="date" id="pickToDate" class="form-control" name="toDate" placeholder="End Date">
+                            </div>
+                            <button type="button" class="btn btn-primary mt-3" id="btnSearchPayment">Search</button>
+                            <button type="button" class="btn btn-warning mt-3 ms-2" id="btnClearDates">Clear</button>
+                        </div>
+                    </div>
+
                 </div>
 
-
-
+                <!--<div class="bg-light row overflow-scroll" style="height: 65vh">-->
+                <div class="paymentTable bg-light row overflow-scroll">
+                    <table class="table table-hover table-bordered table-striped" id="paymentsTbl">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Payment ID</th>
+                            <th>Date</th>
+                            <th>Amount (Rs.)</th>
+                            <th>Rent ID</th>
+                            <th>Customer ID</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblPayments"></tbody>
+                    </table>
+                </div>
             </div> <!--Payments  seen over-->
             <!--==============Payments Page Over===============================================================-->
 

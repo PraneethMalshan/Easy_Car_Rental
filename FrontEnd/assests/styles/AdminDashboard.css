@@ -866,50 +866,29 @@ tr:nth-child(odd) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*================================================================================================*/
 /*==============  Car Rental Page Styls Start  =======================================================*/
-
 .carRentalBox {
-    height: 100vh;
+    position: relative;
     width: 100%;
-    background-color: #adb5bd;
+    padding: 20px;
+    display: flex;
 }
-.carRentalDetails h1 {
-    color: #20c997;
-    background-color: #ff022c;
 
+.carRentalBox h1 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.carRentalTable {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffca2c;*/
+    padding: 20px;
 }
 
 /*==============  Car Page Styls End    =======================================================*/
@@ -920,14 +899,26 @@ tr:nth-child(odd) {
 /*==============  Payments Page Styls Start  =======================================================*/
 
 .paymentBox {
-    height: 100vh;
+    position: relative;
     width: 100%;
-    background-color: #bacbe6;
+    padding: 20px;
+    display: flex;
 }
-.paymentsDetails h1 {
-    color: #20c997;
-    background-color: #ff022c;
 
+.paymentBox h1 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.paymentTable {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffca2c;*/
+    padding: 20px;
 }
 
 /*==============  Car Page Styls End    =======================================================*/
