@@ -375,20 +375,107 @@
                         <tbody id="tblPendingCustomers"></tbody>
                     </table>
                 </div>
-                
+
             </div> <!--Customer  seen over-->
             <!--==============Customer Page Over===============================================================-->
 
             <!--===============================================================================================-->
             <!--==============Driver Page Open===============================================================-->
             <div class="driverBox" id="DriverF">  <!--Driver  seen open-->
-
+                <h1 >Driver Details</h1>
                 <div class="driverDetails">
-                    <h1 >Hello Driver Page</h1>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtDriverId" class="form-label mb-0">Driver ID</label>
+                            <input type="text" class="form-control" id="txtDriverId" name="driverId" placeholder="Eg:- D001">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtDriverName" class="form-label mb-0">Name</label>
+                            <input type="text" class="form-control" id="txtDriverName" name="driverName" placeholder="Eg:- Nimal Bandara">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtDriverContactNo" class="form-label mb-0">Contact No</label>
+                            <input type="text" class="form-control" id="txtDriverContactNo" name="driverContactNo" placeholder="Eg:- 0765401908">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtDriverEmail" class="form-label mb-0">Email</label>
+                            <input type="text" class="form-control" id="txtDriverEmail" name="driverEmail" placeholder="Eg:- nimal@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="txtDriverPassword" class="form-label mb-0">Password</label>
+                            <input type="password" class="form-control" id="txtDriverPassword" name="driverUsername">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="txtDriverNICNo" class="form-label mb-0">NIC No</label>
+                            <input type="text" class="form-control" id="txtDriverNICNo" name="driverNICNo" placeholder="Eg:- 992200863V">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtLicenceNo" class="form-label mb-0">Licence No</label>
+                            <input type="text" class="form-control" id="txtLicenceNo" name="licenceNo" placeholder="Eg:- B1234567">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-2">
+                        <label class="form-label mb-0">Driver Licence Img</label>
+                        <div class="mb-3" id="driverLicenceImg" style="height: 13vh; border: #00e5ff 2px solid">
+
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <label class="form-label mb-0">Driver NIC Img</label>
+                        <div class="mb-3" id="driverNicImg" style="height: 13vh; border: #00e5ff 2px solid">
+
+                        </div>
+                    </div>
+                </div>
+                <!--Buttons-->
+                <div class="driverButtons row m-3">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-success mt-3 " id="btnSaveDriver">Save</button>
+                        <button type="button" class="btn btn-danger mt-3" id="btnDeleteDriver" disabled="">Delete</button>
+                        <button type="button" class="btn btn-warning mt-3" id="btnUpdateDriver" disabled="">Update</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="btnClearDriver">Clear</button>
+                    </div>
                 </div>
 
+                <!--Driver Tables-->
+                <div class="row ms-0 me-0">
+                    <h3 class="h3  p-2 bg-success text-white">Registered Drivers</h3>
+                </div>
 
-
+<!--                <div class="bg-light row overflow-scroll" style="height: 27vh">-->
+                <div class="driverTable bg-light row overflow-scroll">
+                    <table class="table table-hover table-bordered table-striped" id="registeredDriversTbl">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Driver ID</th>
+                            <th>Driver Name</th>
+                            <th>Contact No</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>NIC No</th>
+                            <th>Licence No</th>
+                            <th>Driver Licence Img</th>
+                            <th>Driver NIC Img</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblRegisteredDrivers"></tbody>
+                    </table>
+                </div>
             </div> <!--Driver  seen over-->
             <!--==============Driver Page Over===============================================================-->
 
@@ -434,66 +521,5 @@
 <!--<script src="assests/js/jquery-3.6.0.min.js"></script>-->
 
 
-<!--<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("DashboardF").style.display = 'inline-block';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-
-    document.getElementById("DashboardForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'inline-block';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-
-    document.getElementById("CarForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'inline-block';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("CustomerForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'inline-block';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("DriverForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'inline-block';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("CarRentalForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'inline-block';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("PaymentForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'inline-block';
-    });
-
-</script>-->
 </body>
 </html>
