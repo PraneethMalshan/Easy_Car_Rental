@@ -344,7 +344,6 @@ tr:nth-child(odd) {
     background-color: #17a2b8;
 }
 /*======*/
-/*======*/
 
 
 
@@ -353,18 +352,94 @@ tr:nth-child(odd) {
 
 
 
-
-
-
-
-
-
+/*==========Booking Request=============*/
 .bookingRequestBox {
     position: relative;
     width: 100%;
     padding: 20px;
     display: flex;
 }
+
+.bookingRequestBox h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.CandDrDTopic1 {
+    position: relative;
+    display: flex;
+    left: 30px;
+}
+
+.bookingRequestDetails {
+    width: 100%;
+    background-color: #adb5bd;
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.cIDlbl {
+    display: flex;
+    justify-content: center;
+}
+
+.bookingRequestDetails2 {
+    width: 100%;
+    background-color: #adb5bd;
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.CandDrDTopic2{
+    position: relative;
+    display: flex;
+    left: 30px;
+}
+
+.bookingRequestDetails3 {
+    width: 100%;
+    background-color: #adb5bd;
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.CandDrDTopic3 {
+    position: relative;
+    display: flex;
+    left: 30px;
+}
+.btnsSEandCA {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/*==================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=========*/
 .bookingResponsesBox {
