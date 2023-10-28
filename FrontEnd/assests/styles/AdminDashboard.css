@@ -210,55 +210,6 @@ body {
 /*===================================================================================*/
 /* ======================= Cards ====================== */
 
-/*
-.cardBox {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-}
-
-.cardBox .card {
-    position: relative;
-    background: var(--white);
-    padding: 30px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-}
-
-.cardBox .card .numbers {
-    position: relative;
-    font-weight: 500;
-    font-size: 2.5rem;
-    color: var(--blue);
-}
-
-.cardBox .card .cardName {
-    color: var(--black2);
-    font-size: 1.1rem;
-    margin-top: 5px;
-}
-
-.cardBox .card .iconBx {
-    font-size: 3.5rem;
-    color: var(--black2);
-}
-
-.cardBox .card:hover {
-    background: var(--blue);
-}
-
-.cardBox .card:hover .numbers,
-.cardBox .card:hover .cardName,
-.cardBox .card:hover .iconBx {
-    color: var(--white);
-}
-*/
 
 .cardBox {
     position: relative;
@@ -912,6 +863,25 @@ tr:nth-child(odd) {
 
 }
 
+.paymentBtnDates,.btnOfPayments {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffca2c;*/
+    padding: 20px;
+    text-align: center;
+}
+.btnSearchPayment:hover {
+    background-color: #0dcaf0;
+    border-radius: 30px;
+}
+.btnClearPayment:hover {
+    background-color: #0dcaf0;
+    border-radius: 30px;
+}
+
+/*Payment Tanle*/
 .paymentTable {
     position: relative;
     display: flex;
@@ -922,3 +892,190 @@ tr:nth-child(odd) {
 }
 
 /*==============  Car Page Styls End    =======================================================*/
+
+
+
+/*================================================================================================*/
+/*==============  Rental Request Page Styls Start  =======================================================*/
+.rentalRequestBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+.rentalRequestDetails {
+
+    width: 100%;
+    /*height: 90vh;*/
+    background-color: #adb5bd;
+    border-radius: 30px;
+    padding: 20px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.rentalRequestBox h1 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Rental Request Buttons*/
+.btnRentalRequest {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffca2c;*/
+    padding: 20px;
+    text-align: center;
+}
+
+/*Rental Request Table*/
+.rentalRequestTable {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #ffca2c;*/
+    padding: 20px;
+}
+
+
+
+
+/*Search - Meeka oona wunoth UnComment kara ganna*/
+/*!* Style for the search container *!
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rentalRequestSearch {
+    display: flex;
+    justify-content: center;
+}
+
+!* Style for the search input *!
+#searchRentalRequest {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+!* Style for the Search button *!
+#btnSearchRentalRequest {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#btnSearchRentalRequest:hover {
+    background-color: #0056b3;
+}
+
+!* Style for the search icon *!
+#btnSearchRentalRequest i {
+    padding: 10px;
+}*/
+/**/
+
+/*==============  Rental Request Page Styls End    =======================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================================================================*/
+/*==============  Income Report Page Styls Start  =======================================================*/
+.incomeReportBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.incomeReportBox h1 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* Style for the container */
+.forInBox {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Style for the income tab */
+.incomeTab {
+    background-color: #0dcaf0;
+    color: #fff;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 300px;
+}
+
+.incomeTab:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the income name */
+.incomeName {
+    font-weight: bold;
+}
+
+
+/*==============  Income Report Page Styls End    =======================================================*/
+
+
