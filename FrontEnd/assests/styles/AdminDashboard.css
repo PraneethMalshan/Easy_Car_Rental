@@ -491,6 +491,12 @@ body {
 
     /*background-color: #0dcaf0;*/
 }
+.carBox h1 {
+
+    display: flex;
+    justify-content: center;
+
+}
  .carDetails {
 
      width: 100%;
@@ -506,13 +512,6 @@ body {
      grid-template-columns: repeat(4, 1fr);
      grid-gap: 30px;
  }
-
-.carBox h1 {
-
-    display: flex;
-    justify-content: center;
-
-}
 
 .form-label {
     font-weight: bold;
@@ -571,11 +570,6 @@ body {
     padding: 20px;
     text-align: center;
 }
-
-/* Style for the button container */
-/*.carBtn {
-    text-align: center;
-}*/
 
 /* Style for the buttons */
 .btn {
