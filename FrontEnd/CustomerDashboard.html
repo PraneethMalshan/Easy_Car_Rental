@@ -382,7 +382,8 @@
             <br>
             <div class="row m-3">
                 <div class="btnsSEandCA d-grid gap-2 d-md-flex justify-content-md-center">
-                    <button type="button" class="btn btn-primary mt-3 " id="sendRequest"><i class="fas fa-paper-plane"></i> Send Request</button>
+<!--                    <button type="button" class="btn btn-primary mt-3 " id="sendRequest"><i class="fas fa-paper-plane"></i> Send Request</button>-->
+                    <button type="button" class="btn btn-primary mt-3 " id="sendRequest"><span class="sendIcon"><ion-icon  name="paper-plane-outline"></ion-icon></span> Send Request</button>
                     <button type="button" class="btn btn-warning mt-3 " id="btnCancleRental">Cancle</button>
                 </div>
             </div>
@@ -399,284 +400,111 @@
         <!--==============Booking Responses page===============================================================-->
         <div class="bookingResponsesBox" id="BookingResponsesF">  <!--Booking Responses  seen open-->
             <h1 >Booking Responses</h1>
-            <div class="bookingResponsesDetails">
 
-                <!--                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtRegNo" class="form-label mb-0">Registration Id</label>
-                                        <input type="text" class="form-control" id="txtRegNo" name="regNo" placeholder="CAB-4525">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtBrand" class="form-label mb-0">Brand</label>
-                                        <input type="text" class="form-control" id="txtBrand" name="brand" placeholder="Toyota">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <label for="cmbtype" class="form-label mb-0">Type</label>
-                                    <select class="form-select" aria-label="Default select example" id="cmbtype" name="type">
-                                        <option selected="">- Select Car Type -</option>
-                                        <option value="1">General</option>
-                                        <option value="2">Premium</option>
-                                        <option value="3">Luxury</option>
-                                    </select>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtNoOfPassengers" class="form-label mb-0">No Of Passengers</label>
-                                        <input type="text" class="form-control" id="txtNoOfPassengers" name="noOfPassengers">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <label for="cmbTransmissionType" class="form-label mb-0">Transmission</label>
-                                    <select class="form-select" aria-label="Default select example" id="cmbTransmissionType" name="transmission">
-                                        <option selected="">- Select Transmission -</option>
-                                        <option value="1">Manual</option>
-                                        <option value="2">Auto</option>
-                                    </select>
-                                </div>
-                                <div class="col-2">
-                                    <label for="cmbfuel" class="form-label mb-0">Fuel</label>
-                                    <select class="form-select" aria-label="Default select example" id="cmbfuel" name="fuel">
-                                        <option selected="">- Select Fuel Type -</option>
-                                        <option value="1">Petrol</option>
-                                        <option value="2">Diesel</option>
-                                    </select>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="cmbColor" class="form-label mb-0">Color</label>
-                                        <select class="form-select" aria-label="Default select example" id="cmbColor" name="color">
-                                            <option selected="">- Select Color -</option>
-                                            <option value="1">Black</option>
-                                            <option value="2">White</option>
-                                            <option value="3">Red</option>
-                                            <option value="4">Blue</option>
-                                            <option value="5">Orange</option>
-                                            <option value="6">Silver</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="imgFrontView" class="form-label mb-0">Car Image</label>
-                                        <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
-                                    </div>
-                                </div>
-
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtDailyRate" class="form-label mb-0">Daily Rate (Rs.)</label>
-                                        <input type="text" class="form-control" id="txtDailyRate" name="dailyRate">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtFreeKmForPrice" class="form-label mb-0">Free KM For Day</label>
-                                        <input type="text" class="form-control" id="txtFreeKmForPrice" name="freeKmForPrice">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtMonthlyRate" class="form-label mb-0">Monthly Rate (Rs.)</label>
-                                        <input type="text" class="form-control" id="txtMonthlyRate" name="monthlyRate">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtFreeKmForMonthPrice" class="form-label mb-0">Free KM For Month</label>
-                                        <input type="text" class="form-control" id="txtFreeKmForMonthPrice" name="freeKmForMonthPrice">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtPriceForExtraKm" class="form-label mb-0">Price For Extra Km
-                                            (Rs.)</label>
-                                        <input type="text" class="form-control" id="txtPriceForExtraKm" name="priceForExtraKm">
-                                    </div>
-                                </div>-->
-
-            </div>
-            <!--Buttons-->
-
-            <!--<div class="carBtn row m-3">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <button type="button" class="btn btn-success mt-3 " id="saveCar">Save</button>
-                    <button type="button" class="btn btn-danger mt-3" id="delCar" disabled="">Delete</button>
-                    <button type="button" class="btn btn-warning mt-3" id="updateCar" disabled="">Update</button>
-                    <button type="button" class="btn btn-secondary mt-3" id="clearCar">Clear</button>
-                </div>
-            </div>-->
-
-
-            <!--======Car Table=======-->
-            <!--<div class="carTable row overflow-scroll" >
-                <table class="table table-hover table-bordered table-striped" id="carTbl">
+<!--            <div class="bookingResponseTable row overflow-scroll" style="height: 25vh">-->
+            <div class="bookingResponseTable row overflow-scroll" >
+                <table class="table table-hover table-bordered table-striped" id="bookingResponsesTbl">
                     <thead class="bg-info">
                     <tr>
-                        <th>Reg No</th>
-                        <th>Brand</th>
-                        <th>Type</th>
-                        <th>No Of Passengers</th>
-                        <th>Transmission</th>
-                        <th>Fuel</th>
-                        <th>Color</th>
-                        <th>Car Image</th>
-                        <th>Daily Rate</th>
-                        <th>Free Km For Day</th>
-                        <th>Monthly Rate</th>
-                        <th>Free Km For Month</th>
-                        <th>Price For Extra Km</th>
+                        <th>Rent ID</th>
+                        <th>Date</th>
+                        <th>Pickup Date</th>
+                        <th>Return Date</th>
+                        <th>Registration No</th>
+                        <th>Customer ID</th>
+                        <th>Licence No</th>
+                        <th>Status</th>
                     </tr>
                     </thead>
-                    <tbody id="carTable"></tbody>
-                </table>
+                    <tbody id="bookingResponsesTable">
 
-            </div>-->
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+            <br>
+
+            <div class="bookingResponsesDetails">
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label for="txtRentId" class="form-label mb-0">Rent ID</label>
+                        <input type="text" class="form-control" id="txtRentId" name="rentId" disabled="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label for="txtDate" class="form-label mb-0">Date</label>
+                        <input type="text" class="form-control" id="txtDate" name="date" disabled="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label for="txtPickupDate" class="form-label mb-0">Pickup Date</label>
+                        <input type="text" class="form-control" id="txtPickupDate" name="pickupDate" disabled="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label for="txtReturnDate" class="form-label mb-0">Return Date</label>
+                        <input type="text" class="form-control" id="txtReturnDate" name="returnDate" disabled="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label for="txtRegistrationNo" class="form-label mb-0">Registration No</label>
+                        <input type="text" class="form-control" id="txtRegistrationNo" name="registrationNo" disabled="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="mb-3">
+                        <label for="txtLicenceNo" class="form-label mb-0">Licence No</label>
+                        <input type="text" class="form-control" id="txtLicenceNo" name="licenceNo" disabled="">
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" class="form-control" id="txtRentStatus" name="status" hidden="">
+            <input type="text" class="form-control" id="txtRentCustId" name="custId" hidden="">
+
+            <br>
+            <div class="row m-3">
+                <div class="btnDelCleRental d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button type="button" class="btn btn-danger mt-3 " id="btnDeleteRental"><i class="fas fa-trash"></i> Cancel Rental</button>
+                    <button type="button" class="btn btn-warning mt-3" id="btnClearRental">Clear</button>
+                </div>
+            </div>
+
         </div>
         <!--==============Booking Responses Page Over===============================================================-->
         <!--=================================================================================================-->
 
 
         <!--==============Payments page===============================================================-->
+
         <div class="paymentsBox" id="PaymentsF">  <!--Payments seen open-->
             <h1 >Payments</h1>
             <div class="paymentsDetails">
 
-                <!--                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtRegNo" class="form-label mb-0">Registration Id</label>
-                                        <input type="text" class="form-control" id="txtRegNo" name="regNo" placeholder="CAB-4525">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtBrand" class="form-label mb-0">Brand</label>
-                                        <input type="text" class="form-control" id="txtBrand" name="brand" placeholder="Toyota">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <label for="cmbtype" class="form-label mb-0">Type</label>
-                                    <select class="form-select" aria-label="Default select example" id="cmbtype" name="type">
-                                        <option selected="">- Select Car Type -</option>
-                                        <option value="1">General</option>
-                                        <option value="2">Premium</option>
-                                        <option value="3">Luxury</option>
-                                    </select>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtNoOfPassengers" class="form-label mb-0">No Of Passengers</label>
-                                        <input type="text" class="form-control" id="txtNoOfPassengers" name="noOfPassengers">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <label for="cmbTransmissionType" class="form-label mb-0">Transmission</label>
-                                    <select class="form-select" aria-label="Default select example" id="cmbTransmissionType" name="transmission">
-                                        <option selected="">- Select Transmission -</option>
-                                        <option value="1">Manual</option>
-                                        <option value="2">Auto</option>
-                                    </select>
-                                </div>
-                                <div class="col-2">
-                                    <label for="cmbfuel" class="form-label mb-0">Fuel</label>
-                                    <select class="form-select" aria-label="Default select example" id="cmbfuel" name="fuel">
-                                        <option selected="">- Select Fuel Type -</option>
-                                        <option value="1">Petrol</option>
-                                        <option value="2">Diesel</option>
-                                    </select>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="cmbColor" class="form-label mb-0">Color</label>
-                                        <select class="form-select" aria-label="Default select example" id="cmbColor" name="color">
-                                            <option selected="">- Select Color -</option>
-                                            <option value="1">Black</option>
-                                            <option value="2">White</option>
-                                            <option value="3">Red</option>
-                                            <option value="4">Blue</option>
-                                            <option value="5">Orange</option>
-                                            <option value="6">Silver</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="imgFrontView" class="form-label mb-0">Car Image</label>
-                                        <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
-                                    </div>
-                                </div>
-
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtDailyRate" class="form-label mb-0">Daily Rate (Rs.)</label>
-                                        <input type="text" class="form-control" id="txtDailyRate" name="dailyRate">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtFreeKmForPrice" class="form-label mb-0">Free KM For Day</label>
-                                        <input type="text" class="form-control" id="txtFreeKmForPrice" name="freeKmForPrice">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtMonthlyRate" class="form-label mb-0">Monthly Rate (Rs.)</label>
-                                        <input type="text" class="form-control" id="txtMonthlyRate" name="monthlyRate">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtFreeKmForMonthPrice" class="form-label mb-0">Free KM For Month</label>
-                                        <input type="text" class="form-control" id="txtFreeKmForMonthPrice" name="freeKmForMonthPrice">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="mb-3">
-                                        <label for="txtPriceForExtraKm" class="form-label mb-0">Price For Extra Km
-                                            (Rs.)</label>
-                                        <input type="text" class="form-control" id="txtPriceForExtraKm" name="priceForExtraKm">
-                                    </div>
-                                </div>-->
-
             </div>
-            <!--Buttons-->
-
-            <!--<div class="carBtn row m-3">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                    <button type="button" class="btn btn-success mt-3 " id="saveCar">Save</button>
-                    <button type="button" class="btn btn-danger mt-3" id="delCar" disabled="">Delete</button>
-                    <button type="button" class="btn btn-warning mt-3" id="updateCar" disabled="">Update</button>
-                    <button type="button" class="btn btn-secondary mt-3" id="clearCar">Clear</button>
-                </div>
-            </div>-->
-
-
             <!--======Car Table=======-->
-            <!--<div class="carTable row overflow-scroll" >
-                <table class="table table-hover table-bordered table-striped" id="carTbl">
+            <div class="CusPaymentsTable row overflow-scroll">
+                <table class="table table-hover table-bordered table-striped" id="paymentsTbl">
                     <thead class="bg-info">
                     <tr>
-                        <th>Reg No</th>
-                        <th>Brand</th>
-                        <th>Type</th>
-                        <th>No Of Passengers</th>
-                        <th>Transmission</th>
-                        <th>Fuel</th>
-                        <th>Color</th>
-                        <th>Car Image</th>
-                        <th>Daily Rate</th>
-                        <th>Free Km For Day</th>
-                        <th>Monthly Rate</th>
-                        <th>Free Km For Month</th>
-                        <th>Price For Extra Km</th>
+                        <th>Payment ID</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Customer ID</th>
+                        <th>Rent ID</th>
                     </tr>
                     </thead>
-                    <tbody id="carTable"></tbody>
+                    <tbody id="paymentsTable">
+
+                    </tbody>
                 </table>
 
-            </div>-->
+            </div>
         </div>
         <!--==============Payments Page Over===============================================================-->
         <!--=================================================================================================-->
