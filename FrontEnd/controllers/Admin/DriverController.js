@@ -1,7 +1,7 @@
 let baseUrl="http://localhost:8081/easycarrental/"
 
 
-// getAllDrivers();
+getAllDrivers();
 
 /*Add Drivers*/
 $("#btnSaveDriver").click(function () {
@@ -29,88 +29,88 @@ $("#btnSaveDriver").click(function () {
 });
 
 
-// /*GetAll Drivers*/
-// $("#btnGetAllDriver").click(function () {
-//     getAllDrivers();
-// });
-// //GetAll drivers function
-// function getAllDrivers() {
-//     $("#tblRegisteredDrivers").empty();
-//     $.ajax({
-//         url: baseUrl+"driver",
-//         success:function (res) {
-//             // console.log(res)
-//             for (let d of res.data) {
-//                 let driID=d.driverId;
-//                 let driName=d.driverName;
-//                 let driTel=d.driverTel;
-//                 let driEmail=d.driverEmail;
-//                 let driPassword=d.driverPassword;
-//                 let driNicId=d.driverNicId;
-//                 let driLicenceId=d.driverLicenceId;
-//
-//                 /*let driLicenceImg=d.driverLicenceImg;
-//                 let driNicImg=d.driverNicImg;*/
-//
-//                 // let row= "<tr><td>"+driID+"</td><td>"+driName+"</td><td>"+driTel+"</td><td>"+driEmail+"</td><td>"+driPassword+"</td><td>"+driNicId+"</td><td>"+driLicenceId+"</td><td>"+driLicenceImg+"</td><td>"+driNicImg+"</td></tr>";
-//                 let row= "<tr><td>"+driID+"</td><td>"+driName+"</td><td>"+driTel+"</td><td>"+driEmail+"</td><td>"+driPassword+"</td><td>"+driNicId+"</td><td>"+driLicenceId+"</td></tr>";
-//                 $("#tblRegisteredDrivers").append(row);
-//             }
-//             bindRowClickEvents();
-//             // setTextFieldValues("","","","","","","","","");
-//             setTextFieldValues("","","","","","","");
-//         },
-//         error:function (error) {
-//             let message= JSON.parse(error.responseText).message;
-//             alert(message);
-//         }
-//     });
-// }
-//
-// //Bind events for the table rows function
-// function bindRowClickEvents() {
-//     $("#tblRegisteredDrivers>tr").click(function () {
-//         let driverId = $(this).children(":eq(0)").text();
-//         let driverName = $(this).children(":eq(1)").text();
-//         let driverTel = $(this).children(":eq(2)").text();
-//         let driverEmail = $(this).children(":eq(3)").text();
-//         let driverPassword = $(this).children(":eq(4)").text();
-//         let driverNicId = $(this).children(":eq(5)").text();
-//         let driverLicenceId = $(this).children(":eq(6)").text();
-//
-//         /*let driverLicenceImg = $(this).children(":eq(7)").text();
-//         let driverNicImg = $(this).children(":eq(8)").text();*/
-//
-//         //Setting table details values to text fields
-//         $('#txtDriverId').val(driverId);
-//         $('#txtDriverName').val(driverName);
-//         $('#txtDriverContactNo').val(driverTel);
-//         $('#txtDriverEmail').val(driverEmail);
-//         $('#txtDriverPassword').val(driverPassword);
-//         $('#txtDriverNICNo').val(driverNicId);
-//         $('#txtLicenceNo').val(driverLicenceId);
-//
-//         /* $('#driverLicenceImg').val(driverLicenceImg);
-//          $('#driverNicImg').val(driverNicImg);*/
-//
-//     });
-// }
-// //Set text fields values function
-// // function setTextFieldValues(driverId, driverName, driverTel, driverEmail, driverPassword, driverNicId, driverLicenceId, driverLicenceImg, driverNicImg) {
-// function setTextFieldValues(driverId, driverName, driverTel, driverEmail, driverPassword, driverNicId, driverLicenceId) {
-//     $("#txtDriverId").val(driverId);
-//     $("#txtDriverName").val(driverName);
-//     $("#txtDriverContactNo").val(driverTel);
-//     $("#txtDriverEmail").val(driverEmail);
-//     $("#txtDriverPassword").val(driverPassword);
-//     $("#txtDriverNICNo").val(driverNicId);
-//     $("#txtLicenceNo").val(driverLicenceId);
-//
-//     /*$("#driverLicenceImg").val(driverLicenceImg);
-//     $("#driverNicImg").val(driverNicImg);*/
-// }
-//
-// <!-- txtDriverId txtDriverName txtDriverContactNo  txtDriverEmail txtDriverPassword
-//     txtDriverNICNo  txtLicenceNo  driverLicenceImg  driverNicImg
-// -->
-//
+/*GetAll Drivers*/
+$("#btnGetAllDriver").click(function () {
+    getAllDrivers();
+});
+//GetAll drivers function
+function getAllDrivers() {
+    $("#tblRegisteredDrivers").empty();
+    $.ajax({
+        url: baseUrl+"driver",
+        success:function (res) {
+            // console.log(res)
+            for (let d of res.data) {
+                let driLicenceId=d.licenceNo;
+                let driNicId=d.nic;
+                let driName=d.name;
+                let driAddress=d.address;
+                let driContactNo=d.contactNo;
+                let driUserName=d.username;
+                let driPassword=d.password;
+                let driAvailability=d.availability;
+
+                let row= "<tr><td>"+driLicenceId+"</td><td>"+driNicId+"</td><td>"+driName+"</td><td>"+driAddress+"</td><td>"+driContactNo+"</td><td>"+driUserName+"</td><td>"+driPassword+"</td><td>"+driAvailability+"</td></tr>";
+                $("#tblRegisteredDrivers").append(row);
+            }
+            bindRowClickEvents();
+            setTextFieldValues("","","","","","","","");
+        },
+        error:function (error) {
+            let message= JSON.parse(error.responseText).message;
+            alert(message);
+        }
+    });
+}
+
+//Bind events for the table rows function
+function bindRowClickEvents() {
+    $("#tblRegisteredDrivers>tr").click(function () {
+        let licenceNo = $(this).children(":eq(0)").text();
+        let nic = $(this).children(":eq(1)").text();
+        let name = $(this).children(":eq(2)").text();
+        let address = $(this).children(":eq(3)").text();
+        let contactNo = $(this).children(":eq(4)").text();
+        let username = $(this).children(":eq(5)").text();
+        let password = $(this).children(":eq(6)").text();
+        let availability = $(this).children(":eq(7)").text();
+
+        //Setting table details values to text fields
+        $('#txtLicenceNo').val(licenceNo);
+        $('#txtDriverNICNo').val(nic);
+        $('#txtDriverName').val(name);
+        $('#txtDriverAddress').val(address);
+        $('#txtDriverContactNo').val(contactNo);
+        $('#txtDriverUserName').val(username);
+        $('#txtDriverPassword').val(password);
+        $('#txtDriverAvailability').val(availability);
+
+    });
+}
+//Set text fields values function
+function setTextFieldValues(licenceNo, nic, name, address, contactNo, username, password, availability) {
+
+    $("#txtLicenceNo").val(licenceNo);
+    $("#txtDriverNICNo").val(nic);
+    $("#txtDriverName").val(name);
+    $("#txtDriverAddress").val(address);
+    $("#txtDriverContactNo").val(contactNo);
+    $("#txtDriverUserName").val(username);
+    $("#txtDriverPassword").val(password);
+    $("#txtDriverAvailability").val(availability);
+
+
+}
+
+/* txtLicenceNo  txtDriverNICNo  txtDriverName
+        txtDriverAddress txtDriverContactNo txtDriverUserName
+         txtDriverPassword txtDriverAvailability */
+
+/*                  licenceNo:"",
+                    nic:"",
+                    name:"",
+                    address:"",
+                    contactNo:"",
+                    username:"",
+                    password:"",
+                    availability:"" */
