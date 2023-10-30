@@ -29,6 +29,29 @@ $("#btnSaveDriver").click(function () {
 });
 
 
+/*Delete Drivers*/
+$("#btnDeleteDriver").click(function () {
+   let licenceNo = $("#txtLicenceNo").val();
+   $.ajax({
+       url:baseUrl+"driver?licenceNo="+licenceNo,
+       method: "delete",
+       success:function (resp) {
+           getAllDrivers();
+           alert(resp.message);
+       },
+       error:function (error) {
+           let message= JSON.parse(error.responseText).message;
+           alert(message);
+       }
+   });
+});
+
+
+
+
+
+
+
 /*GetAll Drivers*/
 $("#btnGetAllDriver").click(function () {
     getAllDrivers();
