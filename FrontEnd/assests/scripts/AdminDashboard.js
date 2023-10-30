@@ -32,7 +32,7 @@ toggle.onclick = function () {
     document.getElementById("IncomeReportF").style.display = 'none';
 });
 
-    document.getElementById("DashboardForm").addEventListener('click', function () {
+    document.getElementById("DashboardPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'inline-block';
     document.getElementById("CarF").style.display = 'none';
     document.getElementById("CustomerF").style.display = 'none';
@@ -43,7 +43,7 @@ toggle.onclick = function () {
     document.getElementById("IncomeReportF").style.display = 'none';
 });
 
-    document.getElementById("CarForm").addEventListener('click', function () {
+    document.getElementById("CarPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'none';
     document.getElementById("CarF").style.display = 'inline-block';
     document.getElementById("CustomerF").style.display = 'none';
@@ -53,7 +53,7 @@ toggle.onclick = function () {
     document.getElementById("RentalRequestF").style.display = 'none';
     document.getElementById("IncomeReportF").style.display = 'none';
 });
-    document.getElementById("CustomerForm").addEventListener('click', function () {
+    document.getElementById("CustomerPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'none';
     document.getElementById("CarF").style.display = 'none';
     document.getElementById("CustomerF").style.display = 'inline-block';
@@ -63,7 +63,7 @@ toggle.onclick = function () {
     document.getElementById("RentalRequestF").style.display = 'none';
     document.getElementById("IncomeReportF").style.display = 'none';
 });
-    document.getElementById("DriverForm").addEventListener('click', function () {
+    document.getElementById("DriverPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'none';
     document.getElementById("CarF").style.display = 'none';
     document.getElementById("CustomerF").style.display = 'none';
@@ -73,7 +73,7 @@ toggle.onclick = function () {
     document.getElementById("RentalRequestF").style.display = 'none';
     document.getElementById("IncomeReportF").style.display = 'none';
 });
-    document.getElementById("CarRentalForm").addEventListener('click', function () {
+    document.getElementById("CarRentalPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'none';
     document.getElementById("CarF").style.display = 'none';
     document.getElementById("CustomerF").style.display = 'none';
@@ -83,7 +83,7 @@ toggle.onclick = function () {
     document.getElementById("RentalRequestF").style.display = 'none';
     document.getElementById("IncomeReportF").style.display = 'none';
 });
-    document.getElementById("PaymentForm").addEventListener('click', function () {
+    document.getElementById("PaymentPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'none';
     document.getElementById("CarF").style.display = 'none';
     document.getElementById("CustomerF").style.display = 'none';
@@ -93,7 +93,7 @@ toggle.onclick = function () {
     document.getElementById("RentalRequestF").style.display = 'none';
     document.getElementById("IncomeReportF").style.display = 'none';
 });
-    document.getElementById("RentalRequestForm").addEventListener('click', function () {
+    document.getElementById("RentalRequestPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'none';
     document.getElementById("CarF").style.display = 'none';
     document.getElementById("CustomerF").style.display = 'none';
@@ -103,7 +103,7 @@ toggle.onclick = function () {
     document.getElementById("RentalRequestF").style.display = 'inline-block' ;
     document.getElementById("IncomeReportF").style.display = 'none';
 });
-    document.getElementById("IncomeReportForm").addEventListener('click', function () {
+    document.getElementById("IncomeReportPorm").addEventListener('click', function () {
     document.getElementById("DashboardF").style.display = 'none';
     document.getElementById("CarF").style.display = 'none';
     document.getElementById("CustomerF").style.display = 'none';

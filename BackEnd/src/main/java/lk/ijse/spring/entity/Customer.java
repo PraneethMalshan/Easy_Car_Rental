@@ -15,11 +15,15 @@ import javax.persistence.Id;
 @ToString
 public class Customer {
     @Id
-    private String cusNicId;
-    private String cusName;
-    private String cusEmail;
-    private String cusTel;
-    private String cusPassword;
-    private String cusNicFrontImg;
-    private String cusNicBackImg;
+    private String nicNo;
+    private String name;
+    private String address;
+    private int contactNo;
+    private String email;
+    private String nicFrontImg;
+    private String licenceNo;
+    private String licenceImg;
+    private String username;
+    private String password;
+
 }

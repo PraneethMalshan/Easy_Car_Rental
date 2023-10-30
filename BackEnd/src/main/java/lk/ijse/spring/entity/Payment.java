@@ -16,10 +16,12 @@ import java.math.BigDecimal;
 @ToString
 public class Payment {
     @Id
-    private String paymentId;
-    private BigDecimal timeCost;
-    private BigDecimal extraKM;
-    private BigDecimal damage;
-    private BigDecimal total;
+    private String rentId;
+    private String nicNo;
+    private double advance;
+    private double timeCost;
+    private double extraKm;
+    private double damage;
+    private double total;
 
 }
