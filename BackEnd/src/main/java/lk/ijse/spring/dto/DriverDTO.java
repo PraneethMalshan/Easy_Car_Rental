@@ -10,13 +10,13 @@ import lombok.ToString;
 @Data  //getters setters
 @ToString
 public class DriverDTO {
-    private String driverId;
-    private String driverName;
-    private String driverTel;
-    private String driverEmail;
-    private String driverPassword;
-    private String driverNicId;
-    private String driverLicenceId;
-    /*private String driverLicenceImg;
-    private String driverNicImg;*/
+
+    private String licenceNo;
+    private String nic;
+    private String name;
+    private String address;
+    private String contactNo;
+    private String username;
+    private String password;
+    private boolean availability;
 }

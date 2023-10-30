@@ -1,13 +1,11 @@
 let driver={
-    driverId:"",
-    driverName:"",
-    driverTel:"",
-    driverEmail:"",
-    driverPassword:"",
-    driverNicId:"",
-    driverLicenceId:""
-
-    /*driverLicenceImg:"",
-    driverNicImg:""*/
+    licenceNo:"",
+    nic:"",
+    name:"",
+    address:"",
+    contactNo:"",
+    username:"",
+    password:"",
+    availability:""
 
 }

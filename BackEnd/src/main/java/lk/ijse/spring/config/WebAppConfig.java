@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 //@ComponentScan(basePackages = "lk.ijse.spring")
 @ComponentScan(basePackageClasses = {DriverController.class, AppWideExceptionHandler.class})
-public class WebAppConfig implements WebMvcConfigurer {
+public class WebAppConfig {
 
 
   /*  public WebAppConfig() {
