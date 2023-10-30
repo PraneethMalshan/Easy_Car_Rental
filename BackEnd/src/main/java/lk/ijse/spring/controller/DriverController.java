@@ -22,4 +22,21 @@ public class DriverController {
         return new ResponseUtil("OK","Successfully Registered..!",null);
     }
 
+    @DeleteMapping(params = {"licenceNo"})
+    public ResponseUtil deleteDriver(@RequestParam String licenceNo){
+        service.deleteDriver(licenceNo);
+        return new ResponseUtil("OK", "Successfully Deleted. : "+licenceNo, null);
+    }
+
+    @PutMapping
+    public ResponseUtil updateDriver(@RequestBody DriverDTO dto ){
+        service.updateDriver(dto);
+        return new ResponseUtil("OK", "Successfully Updated. : "+dto.getLicenceNo(), null);
+    }
+
+    @GetMapping
+    public ResponseUtil getAllDrivers(){
+        return new ResponseUtil("OK", "Successfully Loaded. : ",service.getAllDrivers());
+    }
+
 }
