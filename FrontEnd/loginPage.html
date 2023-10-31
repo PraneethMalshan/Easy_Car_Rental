@@ -9,6 +9,7 @@
     ></script>
     <title>Sign in & Sign up Form</title>
     <link rel="stylesheet" href="assests/styles/LoginPage.css">
+
 </head>
 <body>
 <div class="container">
@@ -25,7 +26,8 @@
                     <input type="password" placeholder="Password" />
                 </div>
                 <input type="submit" value="Login" class="btn solid" />
-                <p class="social-text">Or Sign in with social platforms</p>
+
+                <!--<p class="social-text">Or Sign in with social platforms</p>
                 <div class="social-media">
                     <a href="#" class="social-icon">
                         <i class="fab fa-facebook-f"></i>
@@ -39,45 +41,72 @@
                     <a href="#" class="social-icon">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                </div>
+                </div>-->
+
             </form>
             <form action="#" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Nic" />
+<!--                    <input type="text" placeholder="Nic" />-->
+                    <input placeholder="Nic" name="nicNo" type="text"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username" />
+                    <input placeholder="licence No" name="licenceNo" type="text"/>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input placeholder="Name" type="name" name="name"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Address" />
+<!--                    <input type="text" placeholder="Address" />-->
+                    <input placeholder="Address" type="address" name="address"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Contact" />
+<!--                    <input type="email" placeholder="Contact" />-->
+                    <input placeholder="Contact" type="contact" name="contactNo"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email" />
+<!--                    <input type="email" placeholder="Email" />-->
+                    <input placeholder="Email" type="email"name="email"/>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+<!--                    <input type="text" placeholder="Username" />-->
+                    <input placeholder="User Name" type="username"name="username"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" />
+<!--                    <input type="password" placeholder="Password" />-->
+                    <input placeholder="Password" type="password"name="password"/>
                 </div>
 
 
                 <!--            file selector-->
-                <div class="mb-3  custom1">
-                    <label for="formFile" class="form-label custom2">Nic Image</label>
-                    <input class="form-control custom3" type="file" id="formFile">
+
+                <div class="oneInBox" >
+                    <label class="form-label custom2">Nic Image</label>
+                    <label class="form-label custom2">Licence Image</label>
+                </div>
+
+                <div class="twoInBox" >
+                    <div class="mb-3  custom1">
+    <!--                    <input class="form-control custom3" type="file" id="formFile">-->
+                        <input class="form-control custom3" type="file" id="NicImg" name="nicFrontImg">
+                    </div>
+                    <div class="mb-3  custom1">
+
+                        <input class="form-control custom3" type="file" id="licenceImg" name="licenceImg">
+                    </div>
                 </div>
 
 
                 <input type="submit" class="btn" value="Sign up" />
-                <p class="social-text">Or Sign up with social platforms</p>
+              <!--  <p class="social-text">Or Sign up with social platforms</p>
                 <div class="social-media">
                     <a href="#" class="social-icon">
                         <i class="fab fa-facebook-f"></i>
@@ -91,7 +120,7 @@
                     <a href="#" class="social-icon">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                </div>
+                </div>-->
             </form>
         </div>
     </div>
@@ -127,6 +156,15 @@
 </div>
 
 <script src="assests/scripts/AdminController.js"></script>
+<script src="assests/js/bootstrap.js"></script>
+<script src="assests/js/jquery-3.7.0.min.js"></script>
+
+<script src="../FrontEnd/controllers/Login/CustomerController.js"></script>
+<script src="models/Login/CustomerModel.js"></script>
+
+
+<script src="../FrontEnd/controllers/Admin/DriverController.js"></script>
+<script src="models/Admin/DriverModel.js"></script>
 <!--<script src="app.js"></script>-->
 </body>
 </html>

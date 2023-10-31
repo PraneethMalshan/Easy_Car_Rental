@@ -46,10 +46,52 @@ $("#btnDeleteDriver").click(function () {
    });
 });
 
+/* txtLicenceNo  txtDriverNICNo  txtDriverName
+        txtDriverAddress txtDriverContactNo txtDriverUserName
+         txtDriverPassword txtDriverAvailability */
+
+/*  licenceNo nic name address  contactNo
+username password availability  */
+
+/*Update Driver*/
+$("#btnUpdateDriver").click(function () {
+   let licenceNo = $("#txtLicenceNo").val();
+   let nic = $("#txtDriverNICNo").val();
+   let name = $("#txtDriverName").val();
+   let address = $("#txtDriverAddress").val();
+   let contactNo = $("#txtDriverContactNo").val();
+   let username = $("#txtDriverUserName").val();
+   let password = $("#txtDriverPassword").val();
+   let availability = $("#txtDriverAvailability").val();
 
 
+   var driverOb={
+       licenceNo:licenceNo,
+       nic:nic,
+       name:name,
+       address:address,
+       contactNo:contactNo,
+       username:username,
+       password:password,
+       availability:availability
+   }
 
-
+   $.ajax({
+       url:baseUrl+"driver",
+       method:"put",
+       contentType:"application/json",
+       data: JSON.stringify(driverOb),
+       dataType: "json",
+       success:function (resp) {
+           getAllDrivers();
+           alert(resp.message);
+       },
+       error:function (error) {
+           let message= JSON.parse(error.responseText).message;
+           alert(message);
+       }
+   });
+});
 
 
 /*GetAll Drivers*/
@@ -129,11 +171,5 @@ function setTextFieldValues(licenceNo, nic, name, address, contactNo, username, 
         txtDriverAddress txtDriverContactNo txtDriverUserName
          txtDriverPassword txtDriverAvailability */
 
-/*                  licenceNo:"",
-                    nic:"",
-                    name:"",
-                    address:"",
-                    contactNo:"",
-                    username:"",
-                    password:"",
-                    availability:"" */
+/*  licenceNo nic name address  contactNo
+username password availability  */
