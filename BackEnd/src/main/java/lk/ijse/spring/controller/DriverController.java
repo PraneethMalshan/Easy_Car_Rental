@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-@RequestMapping("driver")
+@RequestMapping("/driver")
 public class DriverController {
 
     @Autowired

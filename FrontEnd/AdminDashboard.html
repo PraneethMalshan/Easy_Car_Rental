@@ -172,21 +172,21 @@
             <div class="carBox" id="CarF">  <!--Car  seen open-->
                 <h1 >Car Details</h1>
                 <div class="carDetails row p-3">
-
+                <form id="carrForm">
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtRegId" class="form-label mb-0">Registration Id</label>
+                            <label class="form-label mb-0">Registration Id</label>
                             <input type="text" class="form-control" id="txtRegId" name="regId" placeholder="ABF-6085">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtBrand" class="form-label mb-0">Brand</label>
+                            <label class="form-label mb-0">Brand</label>
                             <input type="text" class="form-control" id="txtBrand" name="brand" placeholder="Toyota">
                         </div>
                     </div>
                     <div class="col-2">
-                        <label for="cmbtype" class="form-label mb-0">Type</label>
+                        <label class="form-label mb-0">Type</label>
                         <select class="form-select" aria-label="Default select example" id="cmbtype" name="type">
                             <option selected="">- Select Car Type -</option>
                             <option value="1">General</option>
@@ -196,12 +196,12 @@
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtNoOfPassengers" class="form-label mb-0">No Of Passengers</label>
+                            <label class="form-label mb-0">No Of Passengers</label>
                             <input type="text" class="form-control" id="txtNoOfPassengers" name="noOfPassengers">
                         </div>
                     </div>
                     <div class="col-2">
-                        <label for="cmbTransmissionType" class="form-label mb-0">Transmission</label>
+                        <label class="form-label mb-0">Transmission</label>
                         <select class="form-select" aria-label="Default select example" id="cmbTransmissionType" name="transmission">
                             <option selected="">- Select Transmission -</option>
                             <option value="1">Manual</option>
@@ -209,7 +209,7 @@
                         </select>
                     </div>
                     <div class="col-2">
-                        <label for="cmbfuel" class="form-label mb-0">Fuel</label>
+                        <label class="form-label mb-0">Fuel</label>
                         <select class="form-select" aria-label="Default select example" id="cmbfuel" name="fuel">
                             <option selected="">- Select Fuel Type -</option>
                             <option value="1">Petrol</option>
@@ -218,7 +218,7 @@
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="cmbColor" class="form-label mb-0">Color</label>
+                            <label class="form-label mb-0">Color</label>
                             <select class="form-select" aria-label="Default select example" id="cmbColor" name="color">
                                 <option selected="">- Select Color -</option>
                                 <option value="1">Black</option>
@@ -232,43 +232,44 @@
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="imgFrontView" class="form-label mb-0">Car Image</label>
+                            <label class="form-label mb-0">Car Image</label>
                             <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
                         </div>
                     </div>
 
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtDailyRate" class="form-label mb-0">Daily Rate (Rs.)</label>
+                            <label class="form-label mb-0">Daily Rate (Rs.)</label>
                             <input type="text" class="form-control" id="txtDailyRate" name="dailyRate">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtFreeKmForPrice" class="form-label mb-0">Free KM For Day</label>
+                            <label class="form-label mb-0">Free KM For Day</label>
                             <input type="text" class="form-control" id="txtFreeKmForPrice" name="freeKmForPrice">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtMonthlyRate" class="form-label mb-0">Monthly Rate (Rs.)</label>
+                            <label class="form-label mb-0">Monthly Rate (Rs.)</label>
                             <input type="text" class="form-control" id="txtMonthlyRate" name="monthlyRate">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtFreeKmForMonthPrice" class="form-label mb-0">Free KM For Month</label>
+                            <label class="form-label mb-0">Free KM For Month</label>
                             <input type="text" class="form-control" id="txtFreeKmForMonthPrice" name="freeKmForMonthPrice">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtPriceForExtraKm" class="form-label mb-0">Price For Extra Km
+                            <label class="form-label mb-0">Price For Extra Km
                                 (Rs.)</label>
                             <input type="text" class="form-control" id="txtPriceForExtraKm" name="priceForExtraKm">
                         </div>
                     </div>
 
+                </form>
                 </div>
                 <!--Buttons-->
 

@@ -1,7 +1,9 @@
+
 let baseUrl="http://localhost:8081/easycarrental/"
 
+
 $("#btnSignUp").click(function () {
-    let formData = $("#sign-up-form").serialize();
+    let formData = $("#customerForm").serialize();
 
     $.ajax({
        url:baseUrl+"customer",
@@ -13,7 +15,6 @@ $("#btnSignUp").click(function () {
             console.log("Success Method Invoked");
             console.log(res);
             alert(res.message);
-            // getAllCustomers();
         },
         error:function (error) {
             //Invokes if status code range is 500 range or 400 range

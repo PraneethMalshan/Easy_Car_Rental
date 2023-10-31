@@ -21,8 +21,8 @@ public class Customer {
     private String address;
     private int contactNo;
     private String email;
-    private String nicFrontImg;
-    private String licenceImg;
+    /*private String nicFrontImg;
+    private String licenceImg;*/
     private String username;
     private String password;
 
