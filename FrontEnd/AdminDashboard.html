@@ -176,18 +176,18 @@
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Registration Id</label>
-                            <input type="text" class="form-control" id="txtRegId" name="regId" placeholder="ABF-6085">
+                            <input type="text" class="form-control" id="txtCarRegId" name="registrationNO" placeholder="ABF-6085">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Brand</label>
-                            <input type="text" class="form-control" id="txtBrand" name="brand" placeholder="Toyota">
+                            <input type="text" class="form-control" id="txtCarBrand" name="brand" placeholder="Toyota">
                         </div>
                     </div>
                     <div class="col-2">
                         <label class="form-label mb-0">Type</label>
-                        <select class="form-select" aria-label="Default select example" id="cmbtype" name="type">
+                        <select class="form-select" aria-label="Default select example" id="cmbCartype" name="type">
                             <option selected="">- Select Car Type -</option>
                             <option value="1">General</option>
                             <option value="2">Premium</option>
@@ -197,12 +197,12 @@
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">No Of Passengers</label>
-                            <input type="text" class="form-control" id="txtNoOfPassengers" name="noOfPassengers">
+                            <input type="text" class="form-control" id="txtCarNoOfPassengers" name="passengersCount">
                         </div>
                     </div>
                     <div class="col-2">
                         <label class="form-label mb-0">Transmission</label>
-                        <select class="form-select" aria-label="Default select example" id="cmbTransmissionType" name="transmission">
+                        <select class="form-select" aria-label="Default select example" id="cmbCarTransmissionType" name="transmissionType">
                             <option selected="">- Select Transmission -</option>
                             <option value="1">Manual</option>
                             <option value="2">Auto</option>
@@ -210,7 +210,7 @@
                     </div>
                     <div class="col-2">
                         <label class="form-label mb-0">Fuel</label>
-                        <select class="form-select" aria-label="Default select example" id="cmbfuel" name="fuel">
+                        <select class="form-select" aria-label="Default select example" id="cmbCarFuel" name="fuelType">
                             <option selected="">- Select Fuel Type -</option>
                             <option value="1">Petrol</option>
                             <option value="2">Diesel</option>
@@ -219,7 +219,7 @@
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Color</label>
-                            <select class="form-select" aria-label="Default select example" id="cmbColor" name="color">
+                            <select class="form-select" aria-label="Default select example" id="cmbCarColor" name="color">
                                 <option selected="">- Select Color -</option>
                                 <option value="1">Black</option>
                                 <option value="2">White</option>
@@ -230,14 +230,35 @@
                             </select>
                         </div>
                     </div>
+
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Complete KM</label>
+                            <input type="text" class="form-control" id="txtCarCompleteKM" name="completeKm">
+                        </div>
+                    </div>
+
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Car Image</label>
                             <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
                         </div>
                     </div>
-
                     <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Price</label>
+                            <input type="text" class="form-control" id="txtCarPrice" name="price">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Status</label>
+                            <input type="text" class="form-control" id="txtCarStatus" name="status">
+                        </div>
+                    </div>
+
+
+                    <!--<div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Daily Rate (Rs.)</label>
                             <input type="text" class="form-control" id="txtDailyRate" name="dailyRate">
@@ -268,7 +289,7 @@
                             <input type="text" class="form-control" id="txtPriceForExtraKm" name="priceForExtraKm">
                         </div>
                     </div>
-
+-->
                 </form>
                 </div>
                 <!--Buttons-->
@@ -295,12 +316,11 @@
                             <th>Transmission</th>
                             <th>Fuel</th>
                             <th>Color</th>
-                            <th>Car Image</th>
-                            <th>Daily Rate</th>
-                            <th>Free Km For Day</th>
-                            <th>Monthly Rate</th>
-                            <th>Free Km For Month</th>
-                            <th>Price For Extra Km</th>
+                            <th>Complete KM</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>Status</th>
+
                         </tr>
                         </thead>
                         <tbody id="carTable"></tbody>
