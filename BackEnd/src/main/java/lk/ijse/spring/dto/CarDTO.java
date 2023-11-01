@@ -9,7 +9,7 @@ import lombok.ToString;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data  //getters setters
+@Data
 @ToString
 public class CarDTO {
 
@@ -20,7 +20,6 @@ public class CarDTO {
     private String transmissionType;
     private String fuelType;
     private String color;
-
     private double completeKm;
     private String status;
     private CarImg images;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assests/styles/AdminDashboard.css">
 
 
+
     <!--    <link rel="stylesheet" href="assests/css/bootstrap.css">-->
 
 </head>
@@ -172,7 +173,7 @@
             <div class="carBox" id="CarF">  <!--Car  seen open-->
                 <h1 >Car Details</h1>
                 <div class="carDetails row p-3">
-                <form id="carForm">
+                <form id="CarForm">
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Registration Id</label>
@@ -244,12 +245,12 @@
                             <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
                         </div>
                     </div>
-                    <div class="col-2">
+                    <!--<div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Price</label>
                             <input type="text" class="form-control" id="txtCarPrice" name="price">
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Status</label>
@@ -296,6 +297,7 @@
 
                 <div class="carBtn row m-3">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+
                         <button type="button" class="btn btn-success mt-3 " id="btnSaveCar">Save</button>
                         <button type="button" class="btn btn-danger mt-3" id="btnDeleteCar" >Delete</button>
                         <button type="button" class="btn btn-warning mt-3" id="btnUpdateCar" >Update</button>
@@ -753,17 +755,23 @@
     </div> <!--mulu page ekama over-->
 
 
+<!-- ====== Scripts ======= -->
+<script src="assests/scripts/AdminDashboard.js"></script>
+
 <script src="assests/js/bootstrap.js"></script>
-<!--<script src="assests/js/jquery-3.6.0.min.js"></script>-->
 <script src="assests/js/jquery-3.7.0.min.js"></script>
 
-<!--<script src="controllers/Admin/DriverController.js"></script>-->
+<script src="../FrontEnd/controllers/CarController.js "></script>
 <script src="../FrontEnd/controllers/Admin/DriverController.js"></script>
-<script src="models/Admin/DriverModel.js"></script>
 
-<!--Car-->
-<script src="../FrontEnd/controllers/Admin/CarController.js"></script>
+
+<script src="models/Admin/DriverModel.js"></script>
 <script src="models/Admin/CarModel.js"></script>
+
+
+
+
+
 
 
 
@@ -772,10 +780,6 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-
-<!-- ====== Scripts ======= -->
-<script src="assests/scripts/AdminDashboard.js"></script>
-<!--Driver_Controller_AND_Model-->
 
 
 

@@ -25,6 +25,10 @@ public class Price {
     private double pricePerExtraKm;
 
     @OneToOne
-    @JoinColumn(name = "car_id")
+    @JoinColumn(name = "registrationNO")
     private Car car;
 }
+
+
+
+
