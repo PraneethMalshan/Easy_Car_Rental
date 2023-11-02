@@ -8,8 +8,7 @@ let car={
     color:"",
     completeKm:"",
     status:"",
-    price:"",
-    images:"",
+    images:""
 
 
     /*

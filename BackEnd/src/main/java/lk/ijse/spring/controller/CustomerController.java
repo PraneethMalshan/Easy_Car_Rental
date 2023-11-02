@@ -22,5 +22,13 @@ public class CustomerController {
         return new ResponseUtil("OK","Successfully Registered..!",null);
     }
 
+    @PostMapping(path = "/{check}")
+    public ResponseUtil checkPassword(CustomerDTO dto){
+        System.out.println(dto.getUsername());
+        System.out.println(dto.getPassword());
+        service.getCustomer(dto);
+        return new ResponseUtil("OK", "true",dto);
+    }
+
 
 }

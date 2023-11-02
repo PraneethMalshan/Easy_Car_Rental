@@ -22,6 +22,14 @@ public class DriverController {
         return new ResponseUtil("OK","Successfully Registered..!",null);
     }
 
+    @PostMapping(path = "/{check}")
+    public ResponseUtil checkPassword(DriverDTO dto){
+        System.out.println(dto.getUsername());
+        System.out.println(dto.getPassword());
+        service.getDriver(dto);
+        return new ResponseUtil("Ok","true",dto);
+    }
+
     @DeleteMapping(params = {"licenceNo"})
     public ResponseUtil deleteDriver(@RequestParam String licenceNo){
         service.deleteDriver(licenceNo);

@@ -242,7 +242,7 @@
                     <div class="col-2">
                         <div class="mb-3">
                             <label class="form-label mb-0">Car Image</label>
-                            <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
+                            <input type="file" class="form-control" id="imgImages" name="images">
                         </div>
                     </div>
                     <!--<div class="col-2">
@@ -320,13 +320,14 @@
                             <th>Fuel</th>
                             <th>Color</th>
                             <th>Complete KM</th>
-                            <th>Price</th>
+<!--                            <th>Price</th>-->
                             <th>Image</th>
                             <th>Status</th>
 
+
                         </tr>
                         </thead>
-                        <tbody id="carTable"></tbody>
+                        <tbody id="tblCar"></tbody>
                     </table>
 
                 </div>
@@ -761,8 +762,9 @@
 <script src="assests/js/bootstrap.js"></script>
 <script src="assests/js/jquery-3.7.0.min.js"></script>
 
-<script src="../FrontEnd/controllers/CarController.js "></script>
 <script src="../FrontEnd/controllers/Admin/DriverController.js"></script>
+<script src="../FrontEnd/controllers/CarController.js "></script>
+
 
 
 <script src="models/Admin/DriverModel.js"></script>

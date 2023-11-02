@@ -1,5 +1,6 @@
 package lk.ijse.spring.servise.impl;
 
+import lk.ijse.spring.dto.AdminDTO;
 import lk.ijse.spring.dto.DriverDTO;
 import lk.ijse.spring.entity.Driver;
 import lk.ijse.spring.repo.DriverRepo;
@@ -17,10 +18,24 @@ import java.util.ArrayList;
 public class DriverServiceImpl implements DriverService {
 
     @Autowired
+    DriverRepo adminRepo;
+    @Autowired
     private DriverRepo repo;
 
     @Autowired
     private ModelMapper mapper ;
+
+    @Override
+    public void getDriver(DriverDTO dto) {
+
+        Driver map = mapper.map(dto, Driver.class);
+        Driver driver = repo.searchDriverWithUserName(map.getUsername());
+        if (driver.getUsername().equals(map.getUsername())&& driver.getPassword().equals(map.getPassword())){
+
+        }else {
+            throw new RuntimeException( " wrong username or password");
+        }
+    }
 
     @Override
     public void saveDriver(DriverDTO dto) {

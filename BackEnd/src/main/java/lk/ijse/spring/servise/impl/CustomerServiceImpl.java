@@ -1,5 +1,6 @@
 package lk.ijse.spring.servise.impl;
 
+import lk.ijse.spring.dto.AdminDTO;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.entity.Customer;
 import lk.ijse.spring.repo.CustomerRepo;
@@ -17,10 +18,25 @@ import java.util.ArrayList;
 public class CustomerServiceImpl implements CustomerService {
 
     @Autowired
+    CustomerRepo adminRepo;
+
+    @Autowired
     private CustomerRepo repo ;
 
     @Autowired
     private ModelMapper mapper ;
+
+
+    @Override
+    public void getCustomer(CustomerDTO dto) {
+        Customer map = mapper.map(dto, Customer.class);
+        Customer customer = repo.searchCustomerWithUserName(map.getUsername());
+        if (customer.getUsername().equals(map.getUsername())&& customer.getPassword().equals(map.getPassword())){
+
+        }else {
+            throw new RuntimeException( " wrong username or password");
+        }
+    }
 
     @Override
     public void saveCustomer(CustomerDTO dto) {

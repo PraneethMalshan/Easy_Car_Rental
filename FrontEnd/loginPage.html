@@ -15,19 +15,84 @@
 <div class="container">
     <div class="forms-container">
         <div class="signin-signup">
-            <form action="#" class="sign-in-form">
+
+
+            <!--<form action="#" class="sign-in-form" id="LoginForm">
                 <h2 class="title">Sign in</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username" />
+                    <select class="cusCombo" id="userType1" name="userType" style="border: none;background-color:transparent ">
+                        <option value="admin">Customer</option>
+                        <option value="customer">Admin</option>
+                        <option value="driver">Driver</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" id="txtUserName" placeholder="Username" name="adminId"/>
+                </div>
+                <div class="input-field">
+
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" id="txtUserPassword"  placeholder="Password" name="password"/>
+                </div>
+                <input type="button" class="btn solid" id="btnLogIn" value="Login"/>
+
+            </form>-->
+
+            <!---->
+            <form action="#" class="sign-in-form" id="loginForm">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <select class="cusCombo" id="userType1" name="userType" style="border: none;background-color:transparent ">
+                        <option value="admin">Admin</option>
+                        <option value="customer">Customer</option>
+                        <option value="driver">Driver</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+<!--                    <input placeholder="Username" name="username" type="text" id="UserName"/>-->
+                    <input placeholder="Username" name="username" type="text" id="username"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" />
+<!--                    <input placeholder="Password" name="password" type="password" id="Password"/>-->
+                    <input placeholder="Password" name="password" type="password" id="password"/>
                 </div>
-                <input type="submit" value="Login" class="btn solid" />
+                <input class="btn solid" type="button" value="Login" id="btnLogin"/>
 
-            </form>
+                <ul style="display: none;">
+<!--                    <li><a href="../pages/DriverDashboard.html" id="driverDash">Page 1</a></li>-->
+                    <li><a href="../FrontEnd/DriverDashboard.html" id="driverDash">Page 1</a></li>
+                    <li><a href="../FrontEnd/AdminDashboard.html" id="adminDash">Page 2</a></li>
+                    <li><a href="DriverDashboard.html" id="CustomerDash">Page 3</a></li>
+                </ul>
+
+                <!--                =======  end login-->
+                <p class="social-text">Or Sign in with social platforms</p>
+                <div class="social-media">
+                    <a class="social-icon" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-icon" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-icon" href="#">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a class="social-icon" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                </form>
+            <!---->
+
+
+
+
+
 
             <form action="#" class="sign-up-form" id="customerForm">
                 <h2 class="title">Sign up</h2>
@@ -65,7 +130,7 @@
                     <input type="password" class="form-control" id="txtCusPassword" placeholder="Password"  name="password"/>
                 </div>
      <!--file selector-->
-                <!--<div class="oneInBox" >
+                <div class="oneInBox" >
                     <label class="form-label custom2">Nic Image</label>
                     <label class="form-label custom2">Licence Image</label>
                 </div>
@@ -77,7 +142,6 @@
                         <input class="form-control custom3" type="file" id="licenceImg" name="licenceImg">
                     </div>
                 </div>
--->
 
                 <input type="button" class="btn" id="btnSignUp" value="Sign up"/>
 
@@ -115,9 +179,11 @@
 
 <script src="../FrontEnd/controllers/Login/CustomerController.js"></script>
 <script src="models/Login/CustomerModel.js"></script>
-
-
 <script src="../FrontEnd/controllers/Admin/DriverController.js"></script>
 <script src="models/Admin/DriverModel.js"></script>
+<script src="../FrontEnd/controllers/Login/AdminController.js"></script>
+<script src="models/Login/AdminModel.js"></script>
+
+
 </body>
 </html>

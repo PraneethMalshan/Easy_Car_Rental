@@ -22,4 +22,22 @@ public class CarController {
         return new ResponseUtil("OK","Successfully Registered..!",null);
     }
 
+    @DeleteMapping(params = {"registrationNO"})
+    public ResponseUtil deleteCar(@RequestParam String registrationNO){
+        service.deleteCar(registrationNO);
+        return new ResponseUtil("OK","Successfully Deleted. : "+registrationNO,null);
+    }
+
+    @PutMapping
+    public ResponseUtil updateCar(@RequestBody CarDTO dto ){
+        service.updateCar(dto);
+        return new ResponseUtil("OK","Successfully Updated. : "+dto.getRegistrationNO(),null);
+    }
+
+
+    @GetMapping
+    public ResponseUtil getAllCars(){
+        return new ResponseUtil("OK","Successfully Loaded. : ",service.getAllCars());
+    }
+
 }
