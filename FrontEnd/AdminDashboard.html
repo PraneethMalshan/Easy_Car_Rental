@@ -73,6 +73,13 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="#" id="logOut">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Log Out</span>
+                    </a>
+                </li>
+
             </ul>
         </div>  <!--Navigation seen over-->
 
@@ -344,44 +351,78 @@
                 <div class="customerDetails">
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtCustomerId" class="form-label mb-0">Customer Nic Id</label>
+                            <label class="form-label mb-0">Customer Nic Id</label>
 <!--                            <input type="text" class="form-control" id="txtCustomerId" name="customerId" disabled="">-->
-                            <input type="text" class="form-control" id="txtCustomerId" name="customerId" >
+                            <input type="text" class="form-control" id="txtCustomerNicId" name="nicNo" >
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Customer Licence No</label>
+<!--                            <input type="text" class="form-control" id="txtCustomerId" name="customerId" disabled="">-->
+                            <input type="text" class="form-control" id="txtCustomerLicId" name="licenceNo" >
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
                             <label for="txtCustomerName" class="form-label mb-0">Customer Name</label>
 <!--                            <input type="text" class="form-control" id="txtCustomerName" name="customerName" disabled="">-->
-                            <input type="text" class="form-control" id="txtCustomerName" name="customerName" >
+                            <input type="text" class="form-control" id="txtCustomerName" name="name" >
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtCustomerContactNo" class="form-label mb-0">Customer Tell</label>
+                            <label class="form-label mb-0">Customer Address</label>
+<!--                            <input type="text" class="form-control" id="txtCustomerName" name="customerName" disabled="">-->
+                            <input type="text" class="form-control" id="txtCustomerAddress" name="address" >
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Contact</label>
 <!--                            <input type="text" class="form-control" id="txtCustomerContactNo" name="customerContactNo" disabled="">-->
-                            <input type="text" class="form-control" id="txtCustomerContactNo" name="customerContactNo" >
+                            <input type="text" class="form-control" id="txtCustomerContactNo" name="contactNo" >
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtCustomerEmail" class="form-label mb-0">Customer Email</label>
+                            <label class="form-label mb-0">Email</label>
 <!--                            <input type="text" class="form-control" id="txtCustomerEmail" name="customerEmail" disabled="">-->
-                            <input type="text" class="form-control" id="txtCustomerEmail" name="customerEmail">
+                            <input type="text" class="form-control" id="txtCustomerEmail" name="email">
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">User Name</label>
+<!--                            <input type="text" class="form-control" id="txtCustomerEmail" name="customerEmail" disabled="">-->
+                            <input type="text" class="form-control" id="txtCustomerUserName" name="username">
                         </div>
                     </div>
                     <div class="col-2">
-                        <label class="form-label mb-0">NIC Front View</label>
-                        <div class="mb-3" id="divNICFrontView" style="height: 13vh; border: #00e5ff 2px solid">
-
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Password</label>
+<!--                            <input type="text" class="form-control" id="txtCustomerEmail" name="customerEmail" disabled="">-->
+                            <input type="text" class="form-control" id="txtCustomerPassword" name="password">
                         </div>
                     </div>
+
                     <div class="col-2">
-                        <label class="form-label mb-0">NIC Back View</label>
-                        <div class="mb-3" id="divNICBackView" style="height: 13vh; border: #00e5ff 2px solid">
-
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Nic Front Image</label>
+                            <input type="file" class="form-control" id="imgNicFrontImg" name="nicFrontImg">
                         </div>
                     </div>
+
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Nic Back Image</label>
+                            <input type="file" class="form-control" id="imgNicBackImg" name="nicBackImg">
+                        </div>
+                    </div>
+
+
+
 
                 </div>
 
@@ -390,6 +431,7 @@
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                         <button type="button" class="btn btn-success mt-3" id="btnAcceptCustomer">Accept</button>
                         <button type="button" class="btn btn-danger mt-3" id="btnRejectCustomer">Reject</button>
+                        <button type="button" class="btn btn-primary mt-3" id="btnGetAllCustomer">Get All</button>
                         <button type="button" class="btn btn-secondary mt-3" id="btnClearFields">Clear</button>
                     </div>
                 </div>
@@ -403,15 +445,19 @@
                     <table class="table table-hover table-bordered table-striped" id="pendingCustomerTbl">
                         <thead class="bg-info">
                         <tr>
-                            <th>Customer Nic Id</th>
+                            <th>Nic Id</th>
+                            <th>Licence No</th>
                             <th>Name</th>
+                            <th>Address</th>
+                            <th>Contact</th>
                             <th>Email</th>
-                            <th>Tell</th>
-                            <th>NIC Front View</th>
-                            <th>NIC Back View</th>
+                            <th>User Name</th>
+                            <th>Password</th>
+                            <th>NIC Image</th>
+                            <th>Licence Image</th>
                         </tr>
                         </thead>
-                        <tbody id="tblPendingCustomers"></tbody>
+                        <tbody id="tblCustomers"></tbody>
                     </table>
                 </div>
 
@@ -758,9 +804,15 @@
 
 <!-- ====== Scripts ======= -->
 <script src="assests/scripts/AdminDashboard.js"></script>
+<script src="../FrontEnd/controllers/URL.js"></script>
+
 
 <script src="assests/js/bootstrap.js"></script>
 <script src="assests/js/jquery-3.7.0.min.js"></script>
+
+
+<!--<script src="../FrontEnd/controllers/Admin/CustomerController.js"></script>-->
+<script src="../FrontEnd/controllers/Admin/CustomerController.js"></script>
 
 <script src="../FrontEnd/controllers/Admin/DriverController.js"></script>
 <script src="../FrontEnd/controllers/CarController.js "></script>
@@ -776,12 +828,16 @@
 
 
 
-
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+<script>
+    $("#logOut").click(function () {
+        window.location.href = "../index.html";
+    });
 
+</script>
 
 
 

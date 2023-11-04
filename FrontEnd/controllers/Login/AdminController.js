@@ -1,4 +1,4 @@
-let baseUrl="http://localhost:8081/easycarrental/"
+// let baseUrl="http://localhost:8081/easycarrental/"
 
 $("#btnLogIn").click(function () {
     let formData = $("#LoginForm").serialize();

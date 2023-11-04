@@ -15,6 +15,14 @@
           <span class="icon"><img src="assests/pic_vid/pic/LogoCar.png" alt="" style="width: 75px; height: 65px"></span>
           <span class="title">Easy Car Rental</span>
       </div>
+
+      <li>
+        <a href="#" id="logOut" style="width: 80px; height: 20px; background-color: #eeeeee; color: #0dcaf0; position: absolute; left: 50px; top: 100px; text-decoration: none">
+          <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+          <span class="title">Log Out</span>
+        </a>
+      </li>
+
     </header>
 
     <div class="main">
@@ -46,6 +54,18 @@
 
     </div>
   </div>
+
+  <script src="assests/js/bootstrap.js"></script>
+  <script src="assests/js/jquery-3.6.0.min.js"></script>
+  <script src="../FrontEnd/controllers/URL.js"></script>
+
+
+  <script>
+    $("#logOut").click(function () {
+      window.location.href = "../index.html";
+    });
+
+  </script>
 
 </body>
 </html>

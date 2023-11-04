@@ -6,8 +6,17 @@ let customer={
     contactNo:"",
     email:"",
     username:"",
-    password:""
+    password:"",
+    nicBackImg:"",
+    nicFrontImg:""
+
+
 }
+
+
+
+/* nicFrontImg:"",
+    licenceImg:""*/
 
 /*nicFrontImg:"",
     licenceImg:"",*/

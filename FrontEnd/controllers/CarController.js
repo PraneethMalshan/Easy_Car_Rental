@@ -1,5 +1,5 @@
 // let baseUrl="http://localhost:8081/easycarrental/"
-let baseUrl="http://localhost:8081/easycarrental/"
+// let baseUrl="http://localhost:8081/easycarrental/"
 
 getAllCars();
 /*Save Car*/

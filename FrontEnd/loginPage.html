@@ -67,7 +67,7 @@
 <!--                    <li><a href="../pages/DriverDashboard.html" id="driverDash">Page 1</a></li>-->
                     <li><a href="../FrontEnd/DriverDashboard.html" id="driverDash">Page 1</a></li>
                     <li><a href="../FrontEnd/AdminDashboard.html" id="adminDash">Page 2</a></li>
-                    <li><a href="DriverDashboard.html" id="CustomerDash">Page 3</a></li>
+                    <li><a href="CustomerDashboard.html" id="CustomerDash">Page 3</a></li>
                 </ul>
 
                 <!--                =======  end login-->
@@ -89,12 +89,7 @@
                 </form>
             <!---->
 
-
-
-
-
-
-            <form action="#" class="sign-up-form" id="customerForm">
+            <form action="#" class="sign-up-form" id="newCusRegForm">
                 <h2 class="title">Sign up</h2>
 
                 <div class="input-field">
@@ -129,23 +124,23 @@
                     <i class="fas fa-lock"></i>
                     <input type="password" class="form-control" id="txtCusPassword" placeholder="Password"  name="password"/>
                 </div>
-     <!--file selector-->
-                <div class="oneInBox" >
-                    <label class="form-label custom2">Nic Image</label>
-                    <label class="form-label custom2">Licence Image</label>
+
+
+                <!--image-->
+                <div class="mb-3  custom1">
+                    <label class="form-label custom2">Nic Front</label>
+                    <input class="form-control custom3" id="NicImg" name="nicFrontImg" type="file">
                 </div>
-                <div class="twoInBox" >
-                    <div class="mb-3  custom1">
-                        <input class="form-control custom3" type="file" id="NicImg" name="nicFrontImg">
-                    </div>
-                    <div class="mb-3  custom1">
-                        <input class="form-control custom3" type="file" id="licenceImg" name="licenceImg">
-                    </div>
+                <div class="mb-3  custom1">
+                    <label class="form-label custom2">Nic Back</label>
+                    <input class="form-control custom3" id="licenceImg" name="nicBackImg" type="file">
                 </div>
+
 
                 <input type="button" class="btn" id="btnSignUp" value="Sign up"/>
 
             </form>
+
         </div>
     </div>
 
@@ -174,16 +169,43 @@
 </div>
 
 <script src="assests/scripts/AdminController.js"></script>
+<script src="../FrontEnd/controllers/URL.js"></script>
 <script src="assests/js/bootstrap.js"></script>
-<script src="assests/js/jquery-3.7.0.min.js"></script>
+<script src="../FrontEnd/assests/js/jquery-3.7.0.min.js"></script>
 
-<script src="../FrontEnd/controllers/Login/CustomerController.js"></script>
+<script src="../FrontEnd/controllers/CustomerController.js"></script>
+
 <script src="models/Login/CustomerModel.js"></script>
+
 <script src="../FrontEnd/controllers/Admin/DriverController.js"></script>
 <script src="models/Admin/DriverModel.js"></script>
 <script src="../FrontEnd/controllers/Login/AdminController.js"></script>
 <script src="models/Login/AdminModel.js"></script>
 
+<!--<script>
+    let baseUrl="http://localhost:8081/easycarrental/"
 
+    $("#btnSignUp").click(function () {
+        let formData = $("#cusForm").serialize();
+
+        $.ajax({
+            url:baseUrl+"customer",
+            method:"post",
+            data:formData,
+            dataType: "json",
+            success:function (res) {
+                //Invoked if the response status code is in 200 range
+                console.log("Success Method Invoked");
+                console.log(res);
+                alert(res.message);
+            },
+            error:function (error) {
+                console.log("Error Method Invoked");
+                console.log(JSON.parse(error.responseText));
+                alert(JSON.parse(error.responseText).message);
+            }
+        });
+    });
+</script>-->
 </body>
 </html>

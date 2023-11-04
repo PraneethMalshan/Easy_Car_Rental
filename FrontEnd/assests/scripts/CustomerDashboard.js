@@ -53,3 +53,7 @@ document.getElementById("PaymentsForm").addEventListener('click', function () {
     document.getElementById("BookingResponsesF").style.display = 'none';
     document.getElementById("PaymentsF").style.display = 'inline-block';
 });
+
+
+
+

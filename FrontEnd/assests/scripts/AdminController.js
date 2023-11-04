@@ -1,4 +1,4 @@
-let baseUrl="http://localhost:8081/easycarrental/"
+// let baseUrl="http://localhost:8081/easycarrental/"
 
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const login = document.querySelector("#btnLogin");

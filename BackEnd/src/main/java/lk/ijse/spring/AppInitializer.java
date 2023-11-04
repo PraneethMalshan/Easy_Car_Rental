@@ -27,9 +27,9 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
         return new String[]{"/"};
     }
 
-    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+    /*protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         registration.setMultipartConfig (new MultipartConfigElement(System.getProperty("java.io.tmpdir")));
-    }
+    }*/
 
 
 

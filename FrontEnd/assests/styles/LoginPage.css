@@ -490,3 +490,84 @@ form.sign-in-form {
         left: 50%;
     }
 }
+
+/*===============================================*/
+
+/*Image*/
+/*
+
+.custom1 {
+    margin-bottom: 1rem;
+}
+
+.custom2 {
+    font-weight: bold;
+}
+
+.custom3 {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 55px;
+    background-color: #f9f9f9;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+.custom3:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.custom3::file-selector-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom3::file-selector-button:hover {
+    background-color:#0056b3;
+}
+
+*/
+
+
+
+/*
+#display1 {
+    background: rgb(77, 255, 255);
+    !*box-shadow: rgb(0 0 0 /25%) 0 14px 28px, rgb(0 0 0 /22%) 0 10px 10px;*!
+}
+#display2 {
+    background: rgb(77, 255, 255);
+    !*box-shadow: rgb(0 0 0 /25%) 0 14px 28px, rgb(0 0 0 /22%) 0 10px 10px;*!
+    position: relative;
+    right: -230px;
+}
+#btnUploadNic, #btnUploadLic {
+    border: solid 2px #20c997;);
+    width: 137px;
+    color: #101214;
+}
+
+#btnUploadLic:hover {
+    background-color: #20F5A5;
+    box-shadow: 0px 15px 20px #20F5A5;
+    color: black;
+    transform: translateY(-3px);
+}
+#btnUploadNic:hover {
+    background-color: #20F5A5;
+    box-shadow: 0px 15px 20px #20F5A5;
+    color: black;
+    transform: translateY(-3px);
+}
+*/
+
+/*
+.pakadaya {
+    background-color: #20c997;
+    color: #ff022c;
+}*/
