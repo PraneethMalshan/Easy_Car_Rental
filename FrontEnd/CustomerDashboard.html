@@ -112,13 +112,19 @@
                 <div class="col-3">
                     <div class="mb-3">
                         <label class="form-label mb-0">Contact No</label>
-                        <input type="text" class="form-control" id="txtCusContactNo" name="contact">
+                        <input type="text" class="form-control" id="txtCusContactNo" name="contactNo">
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="mb-3">
                         <label class="form-label mb-0">Password</label>
-                        <input type="text" class="form-control" id="txtPassword" name="password">
+                        <input type="password" class="form-control" id="txtPassword" name="password">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3">
+                        <label for="txtCusUsername" class="form-label mb-0">Username</label>
+                        <input type="text" class="form-control" id="txtCusUsername" name="username" disabled="">
                     </div>
                 </div>
 
@@ -528,8 +534,9 @@
                     <div class="col-2">
                         <div class="mb-3">
                             <label for="txtCarRentId" class="form-label mb-0">Rent ID</label>
-                            <input type="text" class="form-control" id="txtCarRentId" name="carRentId" disabled="">
-                        </div>
+                            <input type="text" class="form-control" id="txtCarRentId" name="rentId" disabled="">
+                        </div>  <!--rentId advance dayCount pickUpDate rentType status-->
+
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
@@ -621,7 +628,7 @@
             <br>
 
         </div>
-        <!--==============Booking Request Page Over==================
+        <!--==============Booking Request Page Over==================-->
 
 
 
@@ -630,7 +637,7 @@
 
 
 
-        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!--===================================================================-->
 
 
 
@@ -791,6 +798,16 @@
 
 <script src="assests/js/bootstrap.js"></script>
 <script src="assests/js/jquery-3.6.0.min.js"></script>
+
+<script src="../FrontEnd/controllers/URL.js"></script>
+<script src="../FrontEnd/controllers/CarController.js"></script>
+<script src="../FrontEnd/controllers/Admin/CarRentalController.js"></script>
+
+
+
+<script src="AdminDashboard.html"></script>
+<script src="DriverDashboard.html"></script>
+
 
 <script>
     $("#logOut").click(function () {
