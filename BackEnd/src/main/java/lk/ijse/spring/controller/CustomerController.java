@@ -54,6 +54,14 @@ public class CustomerController {
     }
 
 
+    @DeleteMapping(params = {"nicNo"})
+    public ResponseUtil deleteCustomer(@RequestParam String nicNo){
+        service.deleteCustomer(nicNo);
+        return new ResponseUtil("OK","Successfully Deleted. : "+nicNo,null);
+
+    }
+
+
     @GetMapping
     public ResponseUtil getAllCustomeers(){
         return new ResponseUtil("OK","Successfully Loaded. : ",service.getAllCustomers());

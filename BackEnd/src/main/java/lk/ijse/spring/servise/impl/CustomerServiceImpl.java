@@ -91,7 +91,9 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void deleteCustomer(String nicNo) {
-
+        if (!repo.existsById(nicNo)){
+            throw new RuntimeException("Wrong ID. Please enter valid ID..");
+        }
     }
 
     @Override

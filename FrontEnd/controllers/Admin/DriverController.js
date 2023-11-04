@@ -77,6 +77,7 @@ $("#btnUpdateDriver").click(function () {
    }
 
    $.ajax({
+
        url:baseUrl+"driver",
        method:"put",
        contentType:"application/json",

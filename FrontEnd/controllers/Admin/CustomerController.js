@@ -2,6 +2,23 @@
 
 getAllCustomers();
 
+//Delete customer
+
+$("#btnRejectCustomer").click(function () {
+    let nicNo = $("#txtCustomerNicId").val();
+    $.ajax({
+        url:baseUrl+"customer?nicNo="+nicNo,
+        method:"delete",
+        success:function (resp) {
+            getAllCustomers();
+            alert(resp.message);
+        },
+        error:function (error) {
+            let message= JSON.parse(error.responseText).message;
+            alert(message);
+        }
+    });
+});
 
 
 
@@ -90,6 +107,8 @@ function setTextFieldValues(nicNo, licenceNo, name, address, contactNo, email, u
     $("#imgNicBackImg").val(nicBackImg);
 
 }
+
+
 
 
 
